@@ -5,17 +5,18 @@
  :datasource "Kossmann2012 Kossmann2013" 
  :geodemoURL "URL"
  :geodemoTXT "Ghadames is an Eatern Berber language spoken in the oasis of Ghadamès, located in western Libya on the Libyan-Algerian border (30 deg 08' N, 9 deg 30'  E."
- :schemata {:stem [:Base ],
+ :schemata {:vmorphClass [:AffixSubjMark ],
             :gender [:Common :Fem :Masc],
             :number [:Plural :Singular],
-            :person [:Person1 :Person1ex :Person1in :Person2 :Person3 :Not_in_datastore],
+            :person [:Not_in_datastore :Person1 :Person1ex :Person1in :Person2 :Person3],
             :polarity [:Affirmative :Negative],
             :pos [:Pronoun :Verb],
             :proClass [:To_be_added],
             :rootClass [:CCC :VCC],
             :status [:NA],
+            :stem [:Base],
             :tam [:Active :Aorist :Future :Imperative :Imperfective :Perfective :Stative]
-            :pdgmType [:Affix_SubjMark :Finite :PRO]}
+            :pdgmType [:Finite :PRO :VOther]}
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:pos :proClass],
           :inflClass [:status],
@@ -310,8 +311,9 @@
  :muterms [
            {:label "ghadames-VSubjMarkers"
             :note "'active' inclusive/exclusive distinction reported by Lanfry1968; to be inserted in verb pdgms if verified"
-            :pdgmType :Affix_SubjMark
-            :common {:pos :Verb}
+            :pdgmType :VOther
+            :common {:vmorphClass :AffixSubjMark
+                     :pos :Verb}
             :terms [[:tam :number :person :gender :token],
                     [:Imperative :Singular :Person1 :Common  "..."],
                     [:Imperative :Plural :Person2 :Masc "...-ăt"],
