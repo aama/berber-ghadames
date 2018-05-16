@@ -27,7 +27,7 @@
           }
  :termclusters [
                 {:label "ghadames-V-Aff-VCC-imprtv-vTF"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
                           :person :Person2
@@ -41,7 +41,7 @@
                          [:Plural :Fem "atǝf-măt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-imprtv-LMD"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
                           :person :Person2
@@ -55,7 +55,7 @@
                          [:Plural :Fem "almǝd-măt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-perf-vTF"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -74,7 +74,7 @@
                          [:Plural :Person3 :Fem  "utăf-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-stat-MTT"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :mtt
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -93,7 +93,7 @@
                          [:Plural :Person3 :Fem  "măttit-it"]]
                  }
                 {:label "ghadames-V-Aff-VCC-fut-vTF"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -112,7 +112,7 @@
                          [:Plural :Person3 :Fem  "utăf-năt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-aorist-vTF"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -132,7 +132,7 @@
 
                  }
                 {:label "ghadames-V-Aff-CCC-aorist-LMD"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -151,7 +151,7 @@
                          [:Plural :Person3 :Fem  "ălmǝd-năt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-imperf-vTF"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -170,7 +170,7 @@
                          [:Plural :Person3 :Fem  "ttafăf-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-imperf-LMD"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -189,7 +189,7 @@
                          [:Plural :Person3 :Fem  "lămmăd-năt"]]
                  }
                 {:label "ghadames-V-Neg-VCC-imperf-vTF"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Negative,
                           :pos :Verb,
@@ -208,7 +208,7 @@
                          [:Plural :Person3 :Fem  "ttitǝf-năt"]]
                  }
                 {:label "ghadames-V-Neg-CCC-imperf-LMD"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Negative,
                           :pos :Verb,
@@ -227,7 +227,7 @@
                          [:Plural :Person3 :Fem  "lǝmmǝd-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-perf-LMD"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -246,7 +246,7 @@
                          [:Plural :Person3 :Fem  "ǝlmăd-năt"]]
                  }
                 {:label "ghadames-V-Neg-VCC-perf-vTF"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Negative,
                           :pos :Verb,
@@ -265,7 +265,7 @@
                          [:Plural :Person3 :Fem  "utef-năt"]]
                  }
                 {:label "ghadames-V-Neg-CCC-perf-LMD"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Negative,
                           :pos :Verb,
@@ -284,7 +284,7 @@
                          [:Plural :Person3 :Fem  "ǝlmed-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-fut-LMD"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
                           :pos :Verb,
