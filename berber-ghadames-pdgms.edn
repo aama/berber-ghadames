@@ -5,8 +5,7 @@
  :datasource "Kossmann2012 Kossmann2013" 
  :geodemoURL "URL"
  :geodemoTXT "Ghadames is an Eastern Berber language spoken in the oasis of Ghadamès, located in western Libya on the Libyan-Algerian border (30 deg 08' N, 9 deg 30'  E."
-:schemata {:lexeme [:lmd  :mtt :vtf],
- :gender [:Common :Fem :Masc],
+:schemata { :gender [:Common :Fem :Masc],
  :number [:Plural :Singular],
  :person [:Not_in_datastore :Person1 :Person1ex :Person1in :Person2 :Person3],
  :polarity [:Affirmative :Negative],
@@ -22,10 +21,11 @@
           :synsemClass [:pos :proClass],
           :inflClass [:status],
           :otherClass []}
- :lexemes{ :vtf {:rootClass :VCC, :lemma "atǝf", :gloss "enter"}
-          :lmd {:rootClass :CCC, :lemma "ălmǝd", :gloss "learn"}
-          :mtt {:rootClass :CCC, :lemma "măttit", :gloss "be small"}
-          }
+ :lexemes {
+:lmd   {:pos :Verb, :lemma "ălmǝd", :gloss "learn", :rootClass :CCC},
+:mtt   {:pos :Verb, :lemma "măttit", :gloss "be small", :rootClass :CCC},
+:vtf   {:pos :Verb, :lemma "atǝf", :gloss "enter", :rootClass :VCC},
+}
  :termclusters [
                 {:label "ghadames-V-Aff-VCC-imprtv-vTF"
                  :common {:vmorphClass :Finite
