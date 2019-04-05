@@ -2,32 +2,33 @@
  :lang :berber-ghadames
  :subfamily "Eastern Berber"
  :sgpref "bgh"
- :datasource "Kossmann2012 Kossmann2013" 
+ :datasource "Kossmann2012 Kossmann2013; abbrev, K12 K13" 
  :geodemoURL "URL"
  :geodemoTXT "Ghadames is an Eastern Berber language spoken in the oasis of Ghadamès, located in western Libya on the Libyan-Algerian border (30 deg 08' N, 9 deg 30'  E."
-:schemata { :gender [:Common :Fem :Masc],
- :number [:Plural :Singular],
- :person [:Not_in_datastore :Person1 :Person1ex :Person1in :Person2 :Person3],
- :polarity [:Affirmative :Negative],
- :pos [:Pronoun :Verb],
- :proClass [:To_be_added],
- :rootClass [:CCC :VCC],
- :status [:NA],
- :stem [:Base],
- :tam [:Active :Aorist :Future :Imperative :Imperfective :Perfective :Stative],
- :vmorphClass [:AffixSubjMark :Finite]
- }
+ :schemata { :gender [:Common :Fem :Masc],
+            :number [:Plural :Singular],
+            :person [:Not_in_datastore :Person1 :Person1ex :Person1in :Person2 :Person3],
+            :polarity [:Affirmative :Negative],
+            :pos [:Pronoun :Verb],
+            :proClass [:To_be_added],
+            :rootClass [:CCC :VCC],
+            :status [:NA],
+            :stem [:Base],
+            :tam [:Active :Aorist :Future :Imperative :Imperfective :Perfective :Stative],
+            :vmorphClass [:AffixSubjMark :Finite]
+            }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:pos :proClass],
           :inflClass [:status],
           :otherClass []}
  :lexemes {
-:lmd   {:pos :Verb, :lemma "ălmǝd", :gloss "learn", :rootClass :CCC},
-:mtt   {:pos :Verb, :lemma "măttit", :gloss "be small", :rootClass :CCC},
-:vtf   {:pos :Verb, :lemma "atǝf", :gloss "enter", :rootClass :VCC},
-}
+           :lmd   {:pos :Verb, :lemma "ălmǝd", :gloss "learn", :rootClass :CCC},
+           :mtt   {:pos :Verb, :lemma "măttit", :gloss "be small", :rootClass :CCC},
+           :vtf   {:pos :Verb, :lemma "atǝf", :gloss "enter", :rootClass :VCC},
+           }
  :termclusters [
                 {:label "ghadames-V-Aff-VCC-imprtv-vTF"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
@@ -42,6 +43,7 @@
                          [:Plural :Fem "atǝf-măt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-imprtv-LMD"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
@@ -56,6 +58,7 @@
                          [:Plural :Fem "almǝd-măt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-perf-vTF"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
@@ -75,6 +78,7 @@
                          [:Plural :Person3 :Fem  "utăf-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-stat-MTT"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :mtt
                           :polarity :Affirmative,
@@ -94,6 +98,7 @@
                          [:Plural :Person3 :Fem  "măttit-it"]]
                  }
                 {:label "ghadames-V-Aff-VCC-fut-vTF"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
@@ -113,6 +118,7 @@
                          [:Plural :Person3 :Fem  "utăf-năt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-aorist-vTF"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
@@ -133,6 +139,7 @@
 
                  }
                 {:label "ghadames-V-Aff-CCC-aorist-LMD"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
@@ -152,6 +159,7 @@
                          [:Plural :Person3 :Fem  "ălmǝd-năt"]]
                  }
                 {:label "ghadames-V-Aff-VCC-imperf-vTF"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Affirmative,
@@ -171,6 +179,7 @@
                          [:Plural :Person3 :Fem  "ttafăf-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-imperf-LMD"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
@@ -190,6 +199,7 @@
                          [:Plural :Person3 :Fem  "lămmăd-năt"]]
                  }
                 {:label "ghadames-V-Neg-VCC-imperf-vTF"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Negative,
@@ -209,6 +219,7 @@
                          [:Plural :Person3 :Fem  "ttitǝf-năt"]]
                  }
                 {:label "ghadames-V-Neg-CCC-imperf-LMD"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Negative,
@@ -228,6 +239,7 @@
                          [:Plural :Person3 :Fem  "lǝmmǝd-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-perf-LMD"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
@@ -247,6 +259,7 @@
                          [:Plural :Person3 :Fem  "ǝlmăd-năt"]]
                  }
                 {:label "ghadames-V-Neg-VCC-perf-vTF"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :vtf
                           :polarity :Negative,
@@ -266,6 +279,7 @@
                          [:Plural :Person3 :Fem  "utef-năt"]]
                  }
                 {:label "ghadames-V-Neg-CCC-perf-LMD"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Negative,
@@ -285,6 +299,7 @@
                          [:Plural :Person3 :Fem  "ǝlmed-năt"]]
                  }
                 {:label "ghadames-V-Aff-CCC-fut-LMD"
+                 :note "K13p."
                  :common {:vmorphClass :Finite
                           :lexeme :lmd
                           :polarity :Affirmative,
@@ -304,7 +319,7 @@
                          [:Plural :Person3 :Fem  "ǝlmăd-năt"]]
                  }
                 {:label "ghadames-VSubjMarkers"
-                 :note "'active' inclusive/exclusive distinction reported by Lanfry1968; to be inserted in verb pdgms if verified"
+                 :note "K13p. :: 'active' inclusive/exclusive distinction reported by Lanfry1968; to be inserted in verb pdgms if verified"
                  :common {:vmorphClass :AffixSubjMark
                           :pos :Verb}
                  :terms [[:tam :number :person :gender :token],
@@ -342,6 +357,7 @@
                          [:Future :Plural :Person3 :Fem "...-năt"]]
                  }
                 {:label "Pronominal_Paradigms_to_be_added"
+                 :note "K13p."
                  :common {:pos :Pronoun,
                           :proClass :To_be_added}
                  :terms [[:status :person :token],

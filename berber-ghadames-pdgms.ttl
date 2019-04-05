@@ -1,5 +1,5 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data/berber-ghadames//berber-ghadames-pdgms.edn
+#../aama-data/data/berber-ghadames/berber-ghadames-pdgms.edn
 
 @prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,7 +15,7 @@ aama:Berber-ghadames a aamas:Language .
 aama:Berber-ghadames rdfs:label "Berber-ghadames" .
 aama:Berber-ghadames aamas:subfamily "Eastern Berber" .
 aama:Berber-ghadames aamas:lpref "bgh" .
-aama:Berber-ghadames aamas:dataSource "Kossmann2012 Kossmann2013" .
+aama:Berber-ghadames aamas:dataSource "Kossmann2012 Kossmann2013; abbrev, K12 K13" .
 aama:Berber-ghadames aamas:dataSourceNotes "" .
 aama:Berber-ghadames aamas:geodemoURL "URL" .
 aama:Berber-ghadames aamas:geodemoTXT "Ghadames is an Eastern Berber language spoken in the oasis of Ghadamès%% located in western Libya on the Libyan-Algerian border (30 deg 08' N%% 9 deg 30'  E." .
@@ -266,10 +266,10 @@ aama:Berber-ghadames-vtf a aamas:Lexeme ;
 bgh:ghadames-V-Aff-VCC-imprtv-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-imprtv-vTF" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:ID0eb80acd-66fc-4e3f-ada0-fd08f62da07e a aamas:Term ;
+aama:IDbbd8e50d-8dd1-40c8-a6bb-c7bea21c712a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -285,7 +285,7 @@ aama:ID0eb80acd-66fc-4e3f-ada0-fd08f62da07e a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDec3caa89-b33d-4340-ad0e-eecc4d8282da a aamas:Term ;
+aama:ID1bf7eac6-5e68-444e-ad09-2d1e7223d362 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -301,7 +301,7 @@ aama:IDec3caa89-b33d-4340-ad0e-eecc4d8282da a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDa008fcc7-6233-465e-9a77-b74c56ed5b06 a aamas:Term ;
+aama:ID092eb71d-a6dd-4a39-a4fb-da4847a41120 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -322,10 +322,10 @@ aama:IDa008fcc7-6233-465e-9a77-b74c56ed5b06 a aamas:Term ;
 bgh:ghadames-V-Aff-VCC-imprtv-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-imprtv-LMD" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDce78bb3b-9e41-475d-aaab-357f471d85a1 a aamas:Term ;
+aama:ID35a0d572-3ba4-4879-9346-95043ceced97 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -341,7 +341,7 @@ aama:IDce78bb3b-9e41-475d-aaab-357f471d85a1 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDe7bb7bc9-5d98-4540-9506-7a49c4eb5d8d a aamas:Term ;
+aama:IDcda47201-8179-4737-8adc-32223838cdf6 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -357,7 +357,7 @@ aama:IDe7bb7bc9-5d98-4540-9506-7a49c4eb5d8d a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID0178c51e-2f5a-4e38-bca2-6f35fa7f52d0 a aamas:Term ;
+aama:IDbf86e721-6e8d-469c-b66e-126389679d84 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -378,10 +378,10 @@ aama:ID0178c51e-2f5a-4e38-bca2-6f35fa7f52d0 a aamas:Term ;
 bgh:ghadames-V-Aff-VCC-perf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-perf-vTF" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:ID0a415273-3084-4a4d-b7f3-79f5071c4c3e a aamas:Term ;
+aama:ID42a42329-cd51-4d97-9f41-448b6b5948d6 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -397,7 +397,7 @@ aama:ID0a415273-3084-4a4d-b7f3-79f5071c4c3e a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID84fa4f50-11ba-455c-a1b2-3bfcaa0cbdc7 a aamas:Term ;
+aama:IDcad76f46-e6b6-4ba7-b75f-56278f70c8d6 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -413,7 +413,7 @@ aama:ID84fa4f50-11ba-455c-a1b2-3bfcaa0cbdc7 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID7eab541a-4c88-4052-b969-ab293d188d74 a aamas:Term ;
+aama:IDe98e5b0a-d28a-4904-a16c-ff62ef29db06 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -429,7 +429,7 @@ aama:ID7eab541a-4c88-4052-b969-ab293d188d74 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID735e7322-7d81-404a-b409-2be5568b4ea2 a aamas:Term ;
+aama:IDd44f1219-195a-4735-a82c-b4ec22cadec4 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -445,7 +445,7 @@ aama:ID735e7322-7d81-404a-b409-2be5568b4ea2 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID0e031a88-b9a8-4c0c-85e3-2a948d2be41f a aamas:Term ;
+aama:ID47a319a7-2a86-4f32-bb20-6e0bf610464e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -461,7 +461,7 @@ aama:ID0e031a88-b9a8-4c0c-85e3-2a948d2be41f a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID54708ed6-cd37-41b8-ab5f-f1cf6ebb088d a aamas:Term ;
+aama:ID850dea4e-d090-4ccc-9dca-3a8932c76eb3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -477,7 +477,7 @@ aama:ID54708ed6-cd37-41b8-ab5f-f1cf6ebb088d a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID87638688-36f0-4e93-80c2-984f3355e260 a aamas:Term ;
+aama:ID36f548b9-e942-4fcc-8a38-3fcc0372a33a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -493,7 +493,7 @@ aama:ID87638688-36f0-4e93-80c2-984f3355e260 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDd6f56216-112c-4416-be53-c80e0220e9b6 a aamas:Term ;
+aama:ID7ad50722-a1aa-401a-bcfd-00ca09417e86 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -509,7 +509,7 @@ aama:IDd6f56216-112c-4416-be53-c80e0220e9b6 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID60496e4e-98cf-460d-a83b-e0e7a0627466 a aamas:Term ;
+aama:ID3ebcd105-d31c-456e-ae11-461431b5e455 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -530,10 +530,10 @@ aama:ID60496e4e-98cf-460d-a83b-e0e7a0627466 a aamas:Term ;
 bgh:ghadames-V-Aff-CCC-stat-MTT a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-stat-MTT" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:ID8f293dcd-afb7-4d98-af7d-42f1a1a6533f a aamas:Term ;
+aama:IDd2007a6f-254f-4828-9cfc-ba416a786c9f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -549,7 +549,7 @@ aama:ID8f293dcd-afb7-4d98-af7d-42f1a1a6533f a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDab8cc904-2d39-48d6-910c-e360641b7de3 a aamas:Term ;
+aama:ID6ed875a5-1a97-49ed-b5a0-ba8166582f71 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -565,7 +565,7 @@ aama:IDab8cc904-2d39-48d6-910c-e360641b7de3 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID7dc80e1e-b2fa-4425-a658-c874ff913aaf a aamas:Term ;
+aama:IDe921fb97-3ad0-4c4b-a24b-2ab508cf3d74 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -581,7 +581,7 @@ aama:ID7dc80e1e-b2fa-4425-a658-c874ff913aaf a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID126b6a75-15ce-4511-adb2-0d41e66bec40 a aamas:Term ;
+aama:IDa8b09a13-41b3-45b0-9cea-dc871a7669db a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -597,7 +597,7 @@ aama:ID126b6a75-15ce-4511-adb2-0d41e66bec40 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDdfc71bbb-79e3-4b81-aea3-22ae1c7442cf a aamas:Term ;
+aama:ID5cee7f24-8e28-4a42-ad16-0fd0ffa469dc a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -613,7 +613,7 @@ aama:IDdfc71bbb-79e3-4b81-aea3-22ae1c7442cf a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID3124b1ac-5e08-4d9f-bf07-3474d6821222 a aamas:Term ;
+aama:IDbd0e4c3d-3185-4bec-960b-9aba4c911be0 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -629,7 +629,7 @@ aama:ID3124b1ac-5e08-4d9f-bf07-3474d6821222 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID5e5eaaeb-f525-4f97-8078-2ac013ebb7b9 a aamas:Term ;
+aama:ID761c843d-d986-4c0e-ab13-545e927528cb a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -645,7 +645,7 @@ aama:ID5e5eaaeb-f525-4f97-8078-2ac013ebb7b9 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDef1a6d09-347f-4bbb-8ff3-edb8ad8b5045 a aamas:Term ;
+aama:ID9da4ddc6-c05a-47b3-badd-84c5e5a1ce3c a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -661,7 +661,7 @@ aama:IDef1a6d09-347f-4bbb-8ff3-edb8ad8b5045 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDca836784-e8ed-473e-ab13-09f6f37dd7c3 a aamas:Term ;
+aama:IDfc908757-f8fd-4f57-b1db-4532cf43ce87 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
 	bgh:vmorphClass bgh:Finite ;
@@ -682,10 +682,10 @@ aama:IDca836784-e8ed-473e-ab13-09f6f37dd7c3 a aamas:Term ;
 bgh:ghadames-V-Aff-VCC-fut-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-fut-vTF" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDc2a6c49d-e113-4ad2-b58f-ba8329910da4 a aamas:Term ;
+aama:ID867c1356-0bff-487b-8701-394b1d45baf2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -701,7 +701,7 @@ aama:IDc2a6c49d-e113-4ad2-b58f-ba8329910da4 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID5881d82f-a05f-4951-861a-4a0431a2b7f7 a aamas:Term ;
+aama:ID3556c199-1726-4dbe-a557-6537b2be239b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -717,7 +717,7 @@ aama:ID5881d82f-a05f-4951-861a-4a0431a2b7f7 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID78fb3469-4474-4893-8796-e5660ad9e0aa a aamas:Term ;
+aama:ID2fa4698a-1159-4bcf-85f6-7b11bd318531 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -733,7 +733,7 @@ aama:ID78fb3469-4474-4893-8796-e5660ad9e0aa a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDc9ac8779-05fd-4105-9742-a2472542de3f a aamas:Term ;
+aama:IDac0a3ade-6770-46f5-9482-6dc054c5d158 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -749,7 +749,7 @@ aama:IDc9ac8779-05fd-4105-9742-a2472542de3f a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDb9518fa1-cab0-4686-b32b-c14612a3b878 a aamas:Term ;
+aama:ID267e32d7-847b-4c29-9505-2d90d9e315bc a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -765,7 +765,7 @@ aama:IDb9518fa1-cab0-4686-b32b-c14612a3b878 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID0e88c370-963c-4add-ad7b-a4da88f918fb a aamas:Term ;
+aama:ID0839a32a-49bb-48e0-9ac8-2d7ae32a4abe a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -781,7 +781,7 @@ aama:ID0e88c370-963c-4add-ad7b-a4da88f918fb a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDccb5d340-c671-4b4e-ba6e-ca71a9810ba3 a aamas:Term ;
+aama:IDb326219b-c9f9-43c8-ae78-bd6b41aa8a3d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -797,7 +797,7 @@ aama:IDccb5d340-c671-4b4e-ba6e-ca71a9810ba3 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID1e0dc1fb-a73d-4175-84ce-20d5eec003e1 a aamas:Term ;
+aama:ID1e492d31-40df-4382-92f5-81e259006780 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -813,7 +813,7 @@ aama:ID1e0dc1fb-a73d-4175-84ce-20d5eec003e1 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID5b889cf4-1a57-45ba-b129-2bfdbfeea360 a aamas:Term ;
+aama:IDc924a24c-1eec-4677-bfe9-5652cc84d8ad a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -834,10 +834,10 @@ aama:ID5b889cf4-1a57-45ba-b129-2bfdbfeea360 a aamas:Term ;
 bgh:ghadames-V-Aff-VCC-aorist-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-aorist-vTF" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDae624fa5-4045-46ca-8be5-6d7650104284 a aamas:Term ;
+aama:ID46d95e49-036d-41b7-b3bd-2f3c106bec80 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -853,7 +853,7 @@ aama:IDae624fa5-4045-46ca-8be5-6d7650104284 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID4135f2c2-5e4d-4f1d-b2b9-602387add085 a aamas:Term ;
+aama:ID68dd4e6f-7bdb-498d-b800-ff46568df364 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -869,7 +869,7 @@ aama:ID4135f2c2-5e4d-4f1d-b2b9-602387add085 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID30658892-881c-4749-942c-72c19c564026 a aamas:Term ;
+aama:ID2375e70f-170f-4079-95d4-a2aeca51876e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -885,7 +885,7 @@ aama:ID30658892-881c-4749-942c-72c19c564026 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID87339b86-9057-4523-a209-6774b5a233c2 a aamas:Term ;
+aama:ID7ab04e7f-3af7-44d2-b8e9-4f5a514e8b63 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -901,7 +901,7 @@ aama:ID87339b86-9057-4523-a209-6774b5a233c2 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDb1a35012-1021-426e-965d-f1ee1ae0148c a aamas:Term ;
+aama:ID5756136e-659e-4ab8-a1ac-85ac5ada0187 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -917,7 +917,7 @@ aama:IDb1a35012-1021-426e-965d-f1ee1ae0148c a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID616e7f34-af6d-4a60-860d-cdc75947f718 a aamas:Term ;
+aama:ID530acb01-3271-423d-be62-e1708f8027b3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -933,7 +933,7 @@ aama:ID616e7f34-af6d-4a60-860d-cdc75947f718 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID89eccdb5-e9d5-4335-aea2-c0ec50662e56 a aamas:Term ;
+aama:ID83b44528-c1ef-4a85-9474-24e1c2bce0f3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -949,7 +949,7 @@ aama:ID89eccdb5-e9d5-4335-aea2-c0ec50662e56 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID410778aa-e44e-4189-b324-0ac1127a4c20 a aamas:Term ;
+aama:IDf8e8c1fc-037e-4821-a420-bb1e1eb2d036 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -965,7 +965,7 @@ aama:ID410778aa-e44e-4189-b324-0ac1127a4c20 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDaa8c2e63-f419-4b9f-a119-27c247c2dfaf a aamas:Term ;
+aama:IDfad0b7ef-f1ef-4802-b73a-a75e57e1bfde a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -986,10 +986,10 @@ aama:IDaa8c2e63-f419-4b9f-a119-27c247c2dfaf a aamas:Term ;
 bgh:ghadames-V-Aff-CCC-aorist-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-aorist-LMD" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:ID073bf2b5-9dfe-4c38-93be-7282d6aa706e a aamas:Term ;
+aama:IDc4c01cd9-fd83-4ee2-9d40-30fd1405e205 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1005,7 +1005,7 @@ aama:ID073bf2b5-9dfe-4c38-93be-7282d6aa706e a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID411745eb-1b5d-4792-af4d-6b2341078f89 a aamas:Term ;
+aama:IDa32fa66e-fdbb-4744-97f0-40702c6d03c7 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1021,7 +1021,7 @@ aama:ID411745eb-1b5d-4792-af4d-6b2341078f89 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID78752400-f750-40c1-a243-259752b80b3c a aamas:Term ;
+aama:ID3405add5-389d-461e-8af7-8938d598d39e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1037,7 +1037,7 @@ aama:ID78752400-f750-40c1-a243-259752b80b3c a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDef2307bb-a28f-4d07-ae2c-891d72a56dc1 a aamas:Term ;
+aama:IDc9a97945-ae80-43e0-a4cd-5d183463e7b1 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1053,7 +1053,7 @@ aama:IDef2307bb-a28f-4d07-ae2c-891d72a56dc1 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID02965d59-09c4-46ae-a173-f35b7b048d29 a aamas:Term ;
+aama:ID8ac06477-ba00-4b4c-8bfa-2a048bf55397 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1069,7 +1069,7 @@ aama:ID02965d59-09c4-46ae-a173-f35b7b048d29 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDb52003b2-92dd-4bda-8921-c0602cde49a8 a aamas:Term ;
+aama:ID0950e214-0502-4b30-b784-ed4913e87f78 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1085,7 +1085,7 @@ aama:IDb52003b2-92dd-4bda-8921-c0602cde49a8 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID5cf5b6d8-9c22-4fdd-9671-ab183fde9271 a aamas:Term ;
+aama:ID4de556f4-5666-46b8-94d3-d968b0acc770 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1101,7 +1101,7 @@ aama:ID5cf5b6d8-9c22-4fdd-9671-ab183fde9271 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDa962c272-9d2e-4c85-acde-3f6dc867f942 a aamas:Term ;
+aama:ID9b214d4f-3cb0-48cf-9b39-581ecb84dc1b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1117,7 +1117,7 @@ aama:IDa962c272-9d2e-4c85-acde-3f6dc867f942 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID90ee5834-adc3-4456-978f-4ad554640995 a aamas:Term ;
+aama:ID28bf8d42-ca8d-4ff9-a961-2d44d21f9ef8 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1138,10 +1138,10 @@ aama:ID90ee5834-adc3-4456-978f-4ad554640995 a aamas:Term ;
 bgh:ghadames-V-Aff-VCC-imperf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-imperf-vTF" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:ID76042988-272d-4449-87df-b63a9769b614 a aamas:Term ;
+aama:ID3ef47889-0aba-459e-94d1-525e08ebb334 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1157,7 +1157,7 @@ aama:ID76042988-272d-4449-87df-b63a9769b614 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDc94bfbbb-a809-4f2c-896a-bb998b5f09ec a aamas:Term ;
+aama:ID8fa8c8d8-b5e2-4b6f-b95c-7e203413ff17 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1173,7 +1173,7 @@ aama:IDc94bfbbb-a809-4f2c-896a-bb998b5f09ec a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID360279d9-7c02-4cf5-8936-fdbc31d3a376 a aamas:Term ;
+aama:ID64b748f7-2721-4388-8bb8-1cf7f45f1f27 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1189,7 +1189,7 @@ aama:ID360279d9-7c02-4cf5-8936-fdbc31d3a376 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID783fe727-0afa-4ed6-a8f1-4d2c417f9b58 a aamas:Term ;
+aama:ID8579edc7-29f9-4c8d-a082-89224ac4194f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1205,7 +1205,7 @@ aama:ID783fe727-0afa-4ed6-a8f1-4d2c417f9b58 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDeecffad4-3417-4b5e-b66b-fe66ede1dfed a aamas:Term ;
+aama:ID8a6490e8-0e72-4f52-92d4-729a682bb710 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1221,7 +1221,7 @@ aama:IDeecffad4-3417-4b5e-b66b-fe66ede1dfed a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID35a46770-a67e-4e70-8dad-6bb96d4e4314 a aamas:Term ;
+aama:ID32babbc5-d31a-468e-9e1a-958f2848be49 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1237,7 +1237,7 @@ aama:ID35a46770-a67e-4e70-8dad-6bb96d4e4314 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID9ab87d64-6aaf-4f56-8049-ddb7a2ac7899 a aamas:Term ;
+aama:IDcf0779e9-1eaf-41b6-a16e-81a87a23e25f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1253,7 +1253,7 @@ aama:ID9ab87d64-6aaf-4f56-8049-ddb7a2ac7899 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDfb996408-253a-4c95-a355-39a267ff4266 a aamas:Term ;
+aama:ID466089b7-b8a3-4e2e-8f80-3844cbedb969 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1269,7 +1269,7 @@ aama:IDfb996408-253a-4c95-a355-39a267ff4266 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID42540618-39a7-41ee-ad3d-16cc03a41b21 a aamas:Term ;
+aama:ID689be437-1342-4d24-aa6c-df38e4982210 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1290,10 +1290,10 @@ aama:ID42540618-39a7-41ee-ad3d-16cc03a41b21 a aamas:Term ;
 bgh:ghadames-V-Aff-CCC-imperf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-imperf-LMD" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDe8ac9e13-1489-4250-9be2-e7202ec6771c a aamas:Term ;
+aama:ID656aefb5-92de-4ceb-96e1-ebdbfda11f89 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1309,7 +1309,7 @@ aama:IDe8ac9e13-1489-4250-9be2-e7202ec6771c a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID5b8f0af4-36b5-4118-822f-fcdb6c86a890 a aamas:Term ;
+aama:ID46102ffc-ab2b-4698-93f7-ec5a8c806b63 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1325,7 +1325,7 @@ aama:ID5b8f0af4-36b5-4118-822f-fcdb6c86a890 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDc3ec3f14-940c-4e27-b93e-de5f810c196c a aamas:Term ;
+aama:IDa310c00d-4e12-46ef-86c1-41f89837d75e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1341,7 +1341,7 @@ aama:IDc3ec3f14-940c-4e27-b93e-de5f810c196c a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID2cec4540-a55e-4081-82b2-052d55bc0eec a aamas:Term ;
+aama:IDf6c97ebc-ff3c-401a-80c9-6c84b8ebeb32 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1357,7 +1357,7 @@ aama:ID2cec4540-a55e-4081-82b2-052d55bc0eec a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDf81dddb8-496e-4f4e-b1c6-656c305148cf a aamas:Term ;
+aama:ID589c6ebf-d5c8-4662-829c-32660233b78f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1373,7 +1373,7 @@ aama:IDf81dddb8-496e-4f4e-b1c6-656c305148cf a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID783364ee-c136-471e-95d6-c064ed267337 a aamas:Term ;
+aama:ID78eb40cf-8bfc-4564-8ef1-6020c8e2a801 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1389,7 +1389,7 @@ aama:ID783364ee-c136-471e-95d6-c064ed267337 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDdc64f950-646b-4aad-a8c0-c0e3c66f103f a aamas:Term ;
+aama:IDc733a708-7798-4532-ad44-2eaeca33b29c a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1405,7 +1405,7 @@ aama:IDdc64f950-646b-4aad-a8c0-c0e3c66f103f a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID57fe0649-b206-4c16-9cb1-4f8ba4bfd75a a aamas:Term ;
+aama:ID4835e2f0-d1a8-47a1-b4e9-fe916a86bc9c a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1421,7 +1421,7 @@ aama:ID57fe0649-b206-4c16-9cb1-4f8ba4bfd75a a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID0018e258-5342-490c-b90c-51fc1824d878 a aamas:Term ;
+aama:ID7e2cc962-7a37-4aab-b033-cd22a2ca0d18 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1442,10 +1442,10 @@ aama:ID0018e258-5342-490c-b90c-51fc1824d878 a aamas:Term ;
 bgh:ghadames-V-Neg-VCC-imperf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-VCC-imperf-vTF" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDb03013c8-2dc7-45d4-82c1-030df8f3be82 a aamas:Term ;
+aama:IDfe905a5b-62e5-415f-a5b7-5e2da3ab33ad a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1461,7 +1461,7 @@ aama:IDb03013c8-2dc7-45d4-82c1-030df8f3be82 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID68857050-6171-45c7-b8a1-7c17dc32c5e9 a aamas:Term ;
+aama:ID8c591385-bb38-42e0-83ae-a88d3f96f660 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1477,7 +1477,7 @@ aama:ID68857050-6171-45c7-b8a1-7c17dc32c5e9 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDfdb2d446-9d61-4a79-a38a-1792491f9d08 a aamas:Term ;
+aama:IDbf35a24b-3a99-4889-af79-f95791c4a384 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1493,7 +1493,7 @@ aama:IDfdb2d446-9d61-4a79-a38a-1792491f9d08 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDd8bb0d43-e614-470a-ae36-c9dddd2b7ab7 a aamas:Term ;
+aama:IDee134523-f4a4-4229-8504-8525a4320cbe a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1509,7 +1509,7 @@ aama:IDd8bb0d43-e614-470a-ae36-c9dddd2b7ab7 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID0adb094e-db14-4ee9-b5ce-def6f5436832 a aamas:Term ;
+aama:IDc1292574-d3db-4b07-adc9-55dfcb82a04d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1525,7 +1525,7 @@ aama:ID0adb094e-db14-4ee9-b5ce-def6f5436832 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID9b968205-d8a8-4475-b207-438539eb9a65 a aamas:Term ;
+aama:IDc81bcf97-b420-4f31-a515-f94a53383196 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1541,7 +1541,7 @@ aama:ID9b968205-d8a8-4475-b207-438539eb9a65 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID14c4b9e5-f899-4298-bc86-4625af84ea41 a aamas:Term ;
+aama:ID984a25c5-e139-4b83-aff0-c4771dbfae3b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1557,7 +1557,7 @@ aama:ID14c4b9e5-f899-4298-bc86-4625af84ea41 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID50cbed6e-c00a-43ba-8f81-1f0811f7f959 a aamas:Term ;
+aama:ID79445e33-5b1d-4ffa-9667-bef95f6ae0e4 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1573,7 +1573,7 @@ aama:ID50cbed6e-c00a-43ba-8f81-1f0811f7f959 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID370f9814-0453-4b3e-a8f4-8d85af5c0cf4 a aamas:Term ;
+aama:IDc432898f-c7a0-45f8-aaf3-a398f268de3b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1594,10 +1594,10 @@ aama:ID370f9814-0453-4b3e-a8f4-8d85af5c0cf4 a aamas:Term ;
 bgh:ghadames-V-Neg-CCC-imperf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-CCC-imperf-LMD" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDdaa13f34-da56-4026-91bd-308f9f8dba00 a aamas:Term ;
+aama:ID4b29d707-d6dc-4bc6-93e9-2e265d3c158d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1613,7 +1613,7 @@ aama:IDdaa13f34-da56-4026-91bd-308f9f8dba00 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDe38a1032-1a21-42ad-ad22-32e298012a3f a aamas:Term ;
+aama:IDfb0799be-d5d1-4144-b48c-6b4151fa6f48 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1629,7 +1629,7 @@ aama:IDe38a1032-1a21-42ad-ad22-32e298012a3f a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID8dab9262-75db-4447-b0cd-1790ee5d722c a aamas:Term ;
+aama:IDcf3d32e5-805d-4d70-afa5-228d3044f1c9 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1645,7 +1645,7 @@ aama:ID8dab9262-75db-4447-b0cd-1790ee5d722c a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDd7fa966d-3581-4282-bb18-949754f0a43c a aamas:Term ;
+aama:IDb8bf8b5e-e1da-40f6-bf83-b4aa36f5f31b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1661,7 +1661,7 @@ aama:IDd7fa966d-3581-4282-bb18-949754f0a43c a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDe2e7ea3e-9058-4263-b7d3-6d73f5243d64 a aamas:Term ;
+aama:ID2869e14c-57b6-4eef-bdc8-5b0f3e7170f5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1677,7 +1677,7 @@ aama:IDe2e7ea3e-9058-4263-b7d3-6d73f5243d64 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID86dbfa14-8bfe-4abe-88db-071ff7e44051 a aamas:Term ;
+aama:ID01b36d84-dc46-4dd0-bfa5-cc07f0a432dc a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1693,7 +1693,7 @@ aama:ID86dbfa14-8bfe-4abe-88db-071ff7e44051 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID15edb98d-0206-4ad0-af28-d096fe2d0f79 a aamas:Term ;
+aama:IDa8ee80cc-6636-4015-af07-8e6382a93153 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1709,7 +1709,7 @@ aama:ID15edb98d-0206-4ad0-af28-d096fe2d0f79 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID74edea94-d54e-4ce2-88ae-26b30928c169 a aamas:Term ;
+aama:IDd05bd1d3-48c7-4bcb-8070-a1642de7414e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1725,7 +1725,7 @@ aama:ID74edea94-d54e-4ce2-88ae-26b30928c169 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDc93ba41e-4269-4ace-b6db-0813ad0d0d23 a aamas:Term ;
+aama:ID70190c8a-db5e-49ec-b39e-54eeeb11a19e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1746,10 +1746,10 @@ aama:IDc93ba41e-4269-4ace-b6db-0813ad0d0d23 a aamas:Term ;
 bgh:ghadames-V-Aff-CCC-perf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-perf-LMD" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDdf097363-053f-401f-b922-0a20d12cafb4 a aamas:Term ;
+aama:ID05308ef5-2022-41b9-8979-9a3b364a17ad a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1765,7 +1765,7 @@ aama:IDdf097363-053f-401f-b922-0a20d12cafb4 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID2f8f9466-2de5-4f77-a1d2-2295ad5f329c a aamas:Term ;
+aama:ID68ea76dc-469f-41a5-9967-6cfa358bf43f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1781,7 +1781,7 @@ aama:ID2f8f9466-2de5-4f77-a1d2-2295ad5f329c a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDa454114b-62a3-4349-9848-375bf5922048 a aamas:Term ;
+aama:ID103791b4-27c4-468f-8240-0ee423262b6f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1797,7 +1797,7 @@ aama:IDa454114b-62a3-4349-9848-375bf5922048 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID43092132-7b40-4dce-8db1-fb31a9dbd1a3 a aamas:Term ;
+aama:ID89371923-39c9-4911-be45-9b7012b59a78 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1813,7 +1813,7 @@ aama:ID43092132-7b40-4dce-8db1-fb31a9dbd1a3 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDb27da263-4332-445d-bed3-0db808eeba47 a aamas:Term ;
+aama:IDc046992f-64e3-4ff8-b848-6cbfa920eb03 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1829,7 +1829,7 @@ aama:IDb27da263-4332-445d-bed3-0db808eeba47 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDb2e786be-cfeb-40f3-b039-e89e3ba262d4 a aamas:Term ;
+aama:ID7dcdb454-2de4-4ddb-a0d0-645b78d47437 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1845,7 +1845,7 @@ aama:IDb2e786be-cfeb-40f3-b039-e89e3ba262d4 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDe8a99687-e498-4125-b8dd-d6c0a5f15689 a aamas:Term ;
+aama:ID3be93596-e6f4-4361-9c86-2551de5382f5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1861,7 +1861,7 @@ aama:IDe8a99687-e498-4125-b8dd-d6c0a5f15689 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID708097a6-2740-4c19-9408-b7b843993145 a aamas:Term ;
+aama:IDeff2b0f5-cb12-4f96-9ffd-0995dc163a8f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1877,7 +1877,7 @@ aama:ID708097a6-2740-4c19-9408-b7b843993145 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID4e5f336c-0651-415a-8afc-1588861faf22 a aamas:Term ;
+aama:IDc41afc69-0f63-499c-a55e-245ca8d16b51 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1898,10 +1898,10 @@ aama:ID4e5f336c-0651-415a-8afc-1588861faf22 a aamas:Term ;
 bgh:ghadames-V-Neg-VCC-perf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-VCC-perf-vTF" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDe8281791-7d6a-4c93-b2fb-ecc2abdee1b3 a aamas:Term ;
+aama:IDb40efa61-aafd-43ee-b328-a24208d67ceb a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1917,7 +1917,7 @@ aama:IDe8281791-7d6a-4c93-b2fb-ecc2abdee1b3 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID28a8f439-992a-48b3-961d-9b2ea4dade0d a aamas:Term ;
+aama:IDffd1a757-1ba0-41e3-bdf5-49f689eb7086 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1933,7 +1933,7 @@ aama:ID28a8f439-992a-48b3-961d-9b2ea4dade0d a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDa330ad9d-f316-4350-a9bd-8f51da602fa7 a aamas:Term ;
+aama:ID5574a5ab-4e1a-4342-84fb-e7dc9103f82c a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1949,7 +1949,7 @@ aama:IDa330ad9d-f316-4350-a9bd-8f51da602fa7 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDeebd7e74-c244-42a7-ab94-a0c17fbbeca6 a aamas:Term ;
+aama:ID935ac9fa-0887-477c-bedc-fd698be7aa3b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1965,7 +1965,7 @@ aama:IDeebd7e74-c244-42a7-ab94-a0c17fbbeca6 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDe5cf5515-e867-400a-a387-9c55bfeb4f78 a aamas:Term ;
+aama:IDe18c3dc9-7786-4a8d-ba3c-a0cb1bec8d22 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1981,7 +1981,7 @@ aama:IDe5cf5515-e867-400a-a387-9c55bfeb4f78 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID25589ebb-d472-441c-9bc8-1de63a30c293 a aamas:Term ;
+aama:ID1bf1c8e4-de40-4b57-a06c-d4bfc0ff3ecb a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -1997,7 +1997,7 @@ aama:ID25589ebb-d472-441c-9bc8-1de63a30c293 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID3a91391c-190b-4c93-927a-552d7b4ff6cb a aamas:Term ;
+aama:ID5aa4ebbe-6cf3-4251-961b-13c694511fce a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2013,7 +2013,7 @@ aama:ID3a91391c-190b-4c93-927a-552d7b4ff6cb a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID51e8c228-ee21-4c99-b34d-1fe5cf1e1a51 a aamas:Term ;
+aama:IDf54e440b-bf7d-47bc-af71-c2d372fc6b19 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2029,7 +2029,7 @@ aama:ID51e8c228-ee21-4c99-b34d-1fe5cf1e1a51 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDedb885c6-d434-438c-b1b7-9af6aefdf5dd a aamas:Term ;
+aama:ID7085c8ff-e25b-4761-af9b-35b9b262483a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2050,10 +2050,10 @@ aama:IDedb885c6-d434-438c-b1b7-9af6aefdf5dd a aamas:Term ;
 bgh:ghadames-V-Neg-CCC-perf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-CCC-perf-LMD" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:ID3451ffd7-357e-4720-b215-38b3f55534c0 a aamas:Term ;
+aama:ID179ccca6-7cec-478d-9797-7fba1e53f924 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2069,7 +2069,7 @@ aama:ID3451ffd7-357e-4720-b215-38b3f55534c0 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDcdbd63d9-42f9-441b-925d-8c13299d975a a aamas:Term ;
+aama:IDc4c857fd-52cf-4da4-a1f8-c0ea2939f69f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2085,7 +2085,7 @@ aama:IDcdbd63d9-42f9-441b-925d-8c13299d975a a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID20dc3d78-dcf4-4f7d-88a3-aa8abccb4166 a aamas:Term ;
+aama:ID90d66273-53d1-47d3-8f40-c70e6c01006d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2101,7 +2101,7 @@ aama:ID20dc3d78-dcf4-4f7d-88a3-aa8abccb4166 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDcbb3e9a2-54f8-44d9-a62f-35464c9109a9 a aamas:Term ;
+aama:IDea645e0b-53b0-4c32-8697-4ea3d2246a52 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2117,7 +2117,7 @@ aama:IDcbb3e9a2-54f8-44d9-a62f-35464c9109a9 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID6ab8b556-cec7-4e4c-94ad-940505ff4b5b a aamas:Term ;
+aama:IDa7d38a37-3670-4aaa-a2e6-ec39bacf1faa a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2133,7 +2133,7 @@ aama:ID6ab8b556-cec7-4e4c-94ad-940505ff4b5b a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID1c65362a-f278-4f73-ada8-6fd55b70ce1c a aamas:Term ;
+aama:IDae45a688-c50a-496b-88fa-e6059963ab0a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2149,7 +2149,7 @@ aama:ID1c65362a-f278-4f73-ada8-6fd55b70ce1c a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID6a17cc72-38e5-4513-84e0-78e7e3bf63e0 a aamas:Term ;
+aama:IDe9b668bd-37ac-424f-8112-926a0e99333b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2165,7 +2165,7 @@ aama:ID6a17cc72-38e5-4513-84e0-78e7e3bf63e0 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDe7273ddd-1ca9-4985-8a3d-5817f82d8e86 a aamas:Term ;
+aama:IDd80603e6-cecc-4d0c-8cd7-6f297c7ca870 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2181,7 +2181,7 @@ aama:IDe7273ddd-1ca9-4985-8a3d-5817f82d8e86 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID19494cc0-0e2f-412e-bf33-a6ac30192234 a aamas:Term ;
+aama:IDd3a2bba5-fb42-47a3-82a3-e2e340d6c575 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2202,10 +2202,10 @@ aama:ID19494cc0-0e2f-412e-bf33-a6ac30192234 a aamas:Term ;
 bgh:ghadames-V-Aff-CCC-fut-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-fut-LMD" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:IDf5ec51dc-9465-4ded-acb5-283434dd8320 a aamas:Term ;
+aama:IDbf9d46fa-d4ea-42cd-b461-d8e3553c8b25 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2221,7 +2221,7 @@ aama:IDf5ec51dc-9465-4ded-acb5-283434dd8320 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDba5b49ab-5089-4c8b-8e0a-639a35962254 a aamas:Term ;
+aama:ID81df3c68-0ca3-4d01-ab09-7302db854e29 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2237,7 +2237,7 @@ aama:IDba5b49ab-5089-4c8b-8e0a-639a35962254 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDeb735fca-15c6-44c0-98be-9a82193b04b1 a aamas:Term ;
+aama:IDa893b1d8-8d8c-417c-9958-95ab1edea39c a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2253,7 +2253,7 @@ aama:IDeb735fca-15c6-44c0-98be-9a82193b04b1 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:IDa30fd53d-706e-45dc-afd2-0d8432c4c1a7 a aamas:Term ;
+aama:ID2729947e-a6cb-406e-8a68-745b6863b83e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2269,7 +2269,7 @@ aama:IDa30fd53d-706e-45dc-afd2-0d8432c4c1a7 a aamas:Term ;
 	bgh:number bgh:Singular ;
 	.
 
-aama:ID2dc92288-1353-4477-8f3d-174500a972ec a aamas:Term ;
+aama:IDcd3fcb63-ac0a-4ae4-a19c-e3e90765f410 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2285,7 +2285,7 @@ aama:ID2dc92288-1353-4477-8f3d-174500a972ec a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:ID1fea3530-d2c2-4db9-9264-03875df889b0 a aamas:Term ;
+aama:IDa3be3d88-1163-4bb5-90b3-7314ce90f384 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2301,7 +2301,7 @@ aama:ID1fea3530-d2c2-4db9-9264-03875df889b0 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDbe241b9d-3e36-48d2-b436-16f372cd048a a aamas:Term ;
+aama:IDe5bd18cc-bb87-4001-a434-4b988c112c02 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2317,7 +2317,7 @@ aama:IDbe241b9d-3e36-48d2-b436-16f372cd048a a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDdeb706cd-03a6-4804-99ad-699ad5441377 a aamas:Term ;
+aama:IDad66967c-5b9e-4e0b-8c41-e9014aafa5f7 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2333,7 +2333,7 @@ aama:IDdeb706cd-03a6-4804-99ad-699ad5441377 a aamas:Term ;
 	bgh:number bgh:Plural ;
 	.
 
-aama:IDcc65f8fb-60d5-4b1d-ad5b-3b8486029548 a aamas:Term ;
+aama:ID09b6b1fa-9eb9-48bc-9ccf-9d6f380b5631 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
 	bgh:vmorphClass bgh:Finite ;
@@ -2354,10 +2354,10 @@ aama:IDcc65f8fb-60d5-4b1d-ad5b-3b8486029548 a aamas:Term ;
 bgh:ghadames-VSubjMarkers a aamas:Termcluster ;
 	rdfs:label "ghadames-VSubjMarkers" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "'active' inclusive/exclusive distinction reported by Lanfry1968; to be inserted in verb pdgms if verified" 
+	rdfs:comment "K13p. :: 'active' inclusive/exclusive distinction reported by Lanfry1968; to be inserted in verb pdgms if verified" 
 	.
 
-aama:IDc79e476e-ff17-4ab7-9087-40d7b00d73d7 a aamas:Term ;
+aama:IDf514d218-9e73-4cb4-96f8-af73f6484ef0 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2369,7 +2369,7 @@ aama:IDc79e476e-ff17-4ab7-9087-40d7b00d73d7 a aamas:Term ;
 	bgh:tam bgh:Imperative ;
 	.
 
-aama:ID32553e4d-8caf-4958-8e27-53f6d4cb9051 a aamas:Term ;
+aama:ID18370a83-2a54-4d2a-bb95-387ca2e1c593 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2381,7 +2381,7 @@ aama:ID32553e4d-8caf-4958-8e27-53f6d4cb9051 a aamas:Term ;
 	bgh:tam bgh:Imperative ;
 	.
 
-aama:IDebe79c3c-8c09-489e-a606-70ed6dda3f07 a aamas:Term ;
+aama:IDda52577b-c245-49ea-82a3-201355f7d8a3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2393,7 +2393,7 @@ aama:IDebe79c3c-8c09-489e-a606-70ed6dda3f07 a aamas:Term ;
 	bgh:tam bgh:Imperative ;
 	.
 
-aama:IDf6d937da-e869-43f4-99ab-a688cbfea4b7 a aamas:Term ;
+aama:ID764ac472-b1b0-44d4-ba37-8468195e7309 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2405,7 +2405,7 @@ aama:IDf6d937da-e869-43f4-99ab-a688cbfea4b7 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:IDa93f1e5a-4eae-43ad-8490-bb7427a1f709 a aamas:Term ;
+aama:ID0396b187-dc25-40c3-9bf2-5ea600717a34 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2417,7 +2417,7 @@ aama:IDa93f1e5a-4eae-43ad-8490-bb7427a1f709 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:IDd793bda6-2c5e-4883-9e49-1462f3a6e5fe a aamas:Term ;
+aama:IDf0754292-5400-4e60-bd27-7f94feabb7f0 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2429,7 +2429,7 @@ aama:IDd793bda6-2c5e-4883-9e49-1462f3a6e5fe a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:IDedd4cb47-22f7-4daf-8a38-f40004d45245 a aamas:Term ;
+aama:ID884bf78d-69bf-4f0c-9308-af51bae19e37 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2441,7 +2441,7 @@ aama:IDedd4cb47-22f7-4daf-8a38-f40004d45245 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:ID73dc1463-bba2-4d22-b7a5-ff81979bb070 a aamas:Term ;
+aama:IDd64cbc83-f37b-4c61-a783-cb7846721de8 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2453,7 +2453,7 @@ aama:ID73dc1463-bba2-4d22-b7a5-ff81979bb070 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:ID24fd7d32-b252-46bd-a49c-26f07a8615bc a aamas:Term ;
+aama:ID55657961-61b0-4655-94e3-d71f53184ed1 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2465,7 +2465,7 @@ aama:ID24fd7d32-b252-46bd-a49c-26f07a8615bc a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:ID1e19319c-ccb0-453b-b864-aaf1cefb11b3 a aamas:Term ;
+aama:ID10a48656-e693-43cc-a65c-3f383e144a29 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2477,7 +2477,7 @@ aama:ID1e19319c-ccb0-453b-b864-aaf1cefb11b3 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:ID6c1067df-5427-455c-b298-1365b3f28150 a aamas:Term ;
+aama:IDfe2346c6-3c33-4a36-8cc4-bb9d93212754 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2489,7 +2489,7 @@ aama:ID6c1067df-5427-455c-b298-1365b3f28150 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:ID82999a7b-26ca-4bea-99d2-f504727f7598 a aamas:Term ;
+aama:ID7dedd15b-2079-4e38-b488-d5e7e634f1f1 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2501,7 +2501,7 @@ aama:ID82999a7b-26ca-4bea-99d2-f504727f7598 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:ID5999a23b-6652-4087-9b22-69278dc89dc5 a aamas:Term ;
+aama:ID49894e88-0da5-4e89-86bc-ab2c6ee43557 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2513,7 +2513,7 @@ aama:ID5999a23b-6652-4087-9b22-69278dc89dc5 a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:IDafd3312c-78a8-48f4-a5ca-f74b4775f9ba a aamas:Term ;
+aama:ID2297a1be-c152-4dd3-87c5-8c3cea8c882b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2525,7 +2525,7 @@ aama:IDafd3312c-78a8-48f4-a5ca-f74b4775f9ba a aamas:Term ;
 	bgh:tam bgh:Active ;
 	.
 
-aama:ID04e7b966-70c3-4e79-ae04-ddb3ea5ed177 a aamas:Term ;
+aama:ID2d7d424f-3aab-4e3b-b7cd-3d97e48329fb a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2537,7 +2537,7 @@ aama:ID04e7b966-70c3-4e79-ae04-ddb3ea5ed177 a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:IDbbcd04d0-661d-4d90-95f1-1acbb9a49ea3 a aamas:Term ;
+aama:ID586e035d-743b-455a-bca6-772d5bfc68b2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2549,7 +2549,7 @@ aama:IDbbcd04d0-661d-4d90-95f1-1acbb9a49ea3 a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:ID0a88af83-328a-4dc8-8844-9b0de7c01174 a aamas:Term ;
+aama:IDc0556e19-20b8-4316-8f1e-cfbc6a09c7b2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2561,7 +2561,7 @@ aama:ID0a88af83-328a-4dc8-8844-9b0de7c01174 a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:IDc5e5bdbe-62cc-4a7e-a859-887b80b08440 a aamas:Term ;
+aama:IDbd92453a-2784-4847-9dc9-1c0ccf577632 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2573,7 +2573,7 @@ aama:IDc5e5bdbe-62cc-4a7e-a859-887b80b08440 a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:ID1060eff5-89e7-41ab-a9cf-85ca0e3031f4 a aamas:Term ;
+aama:IDbfb85a99-551e-4c19-b7e6-9381a949f184 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2585,7 +2585,7 @@ aama:ID1060eff5-89e7-41ab-a9cf-85ca0e3031f4 a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:ID379c7542-bfd9-4d54-84ec-f7e83790c83c a aamas:Term ;
+aama:IDf899910d-24df-43ac-853c-f08ddf5c6b1b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2597,7 +2597,7 @@ aama:ID379c7542-bfd9-4d54-84ec-f7e83790c83c a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:ID7b6a34f3-d859-4674-b93b-c7e0c1e1cfbc a aamas:Term ;
+aama:ID5b1e050b-21e3-469c-9571-55d588cbff24 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2609,7 +2609,7 @@ aama:ID7b6a34f3-d859-4674-b93b-c7e0c1e1cfbc a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:ID8c32d619-0d42-4bbb-a398-b499a1866de4 a aamas:Term ;
+aama:ID09e14632-921c-411c-ae5e-44cf72531656 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2621,7 +2621,7 @@ aama:ID8c32d619-0d42-4bbb-a398-b499a1866de4 a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:ID991a0b2e-8e99-4577-be20-4318dd5f94c6 a aamas:Term ;
+aama:IDfc5fc59d-468f-4866-9fe0-3d616003c558 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2633,7 +2633,7 @@ aama:ID991a0b2e-8e99-4577-be20-4318dd5f94c6 a aamas:Term ;
 	bgh:tam bgh:Stative ;
 	.
 
-aama:IDaf6e6b85-2664-4065-b9ae-e61823b25494 a aamas:Term ;
+aama:ID89fe8dba-b49d-404a-ba7d-98cda26810a2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2645,7 +2645,7 @@ aama:IDaf6e6b85-2664-4065-b9ae-e61823b25494 a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:ID8670392b-36e8-4630-a19a-13845d2126f7 a aamas:Term ;
+aama:ID33fdc51c-045f-4104-b82e-688012e74ed3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2657,7 +2657,7 @@ aama:ID8670392b-36e8-4630-a19a-13845d2126f7 a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:ID63468b78-cdd3-496b-92c7-fac01b395240 a aamas:Term ;
+aama:IDab3988a6-4ebb-451c-9655-e67374f39a48 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2669,7 +2669,7 @@ aama:ID63468b78-cdd3-496b-92c7-fac01b395240 a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:ID999b932e-d414-4fc2-9314-b323e44d2eb0 a aamas:Term ;
+aama:IDd3272150-1c59-48ea-a6fc-d4e80503ea16 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2681,7 +2681,7 @@ aama:ID999b932e-d414-4fc2-9314-b323e44d2eb0 a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:ID99354377-54b7-46b5-8972-383beb868edd a aamas:Term ;
+aama:ID49f9b5e5-a92d-4296-8e2d-a4e443a3cf38 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2693,7 +2693,7 @@ aama:ID99354377-54b7-46b5-8972-383beb868edd a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:ID7b1c60bd-83dd-42a6-a6ab-8a02e35dd38f a aamas:Term ;
+aama:ID2aaf35af-6407-48d6-9e67-f0354ead7060 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2705,7 +2705,7 @@ aama:ID7b1c60bd-83dd-42a6-a6ab-8a02e35dd38f a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:IDc6f4132e-fc01-492b-971d-31b29bf0a19c a aamas:Term ;
+aama:ID2b32056f-11e6-4d67-be48-15dc97af0f87 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2717,7 +2717,7 @@ aama:IDc6f4132e-fc01-492b-971d-31b29bf0a19c a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:ID087381f4-5ab2-4117-b437-8efa28858426 a aamas:Term ;
+aama:IDebae775a-445f-46c6-8434-08f89a861156 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2729,7 +2729,7 @@ aama:ID087381f4-5ab2-4117-b437-8efa28858426 a aamas:Term ;
 	bgh:tam bgh:Future ;
 	.
 
-aama:ID7b66f653-df4a-4125-b573-2f502fb062fb a aamas:Term ;
+aama:ID27689bd8-dad5-4de7-ae6f-15dd3f86636d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
 	bgh:vmorphClass bgh:AffixSubjMark ;
@@ -2746,10 +2746,10 @@ aama:ID7b66f653-df4a-4125-b573-2f502fb062fb a aamas:Term ;
 bgh:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:label "Pronominal_Paradigms_to_be_added" ;
 	aamas:lang aama:Berber-ghadames ;
-	rdfs:comment "" 
+	rdfs:comment "K13p." 
 	.
 
-aama:ID827f17ce-0559-4b04-a7d7-7f5741117d9d a aamas:Term ;
+aama:ID1317d647-96e7-46a4-b604-f903e153d752 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:Pronominal_Paradigms_to_be_added ;
 	bgh:pos bgh:Pronoun ;
