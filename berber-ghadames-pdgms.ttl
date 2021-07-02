@@ -1,25 +1,24 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data/berber-ghadames/berber-ghadames-pdgms.edn
+#data/berber-ghadames-pdgms.json
 
-@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc:    <http://purl.org/dc/elements>.
-@prefix dcterms:    <http://purl.org/dc/terms>.
-@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix aama:    <http://id.oi.uchicago.edu/aama/2013/> .
 @prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
-@prefix bgh:   <http://id.oi.uchicago.edu/aama/2013/berber-ghadames/> .
+@prefix bgh:     <http://id.oi.uchicago.edu/aama/2013/berber-ghadames/> .
 
 #LANG INFO:
 
-aama:Berber-ghadames a aamas:Language .
+aama:Berber-ghadames a aamas:Language.
 aama:Berber-ghadames rdfs:label "Berber-ghadames" .
 aama:Berber-ghadames aamas:subfamily "Eastern Berber" .
 aama:Berber-ghadames aamas:lpref "bgh" .
 aama:Berber-ghadames aamas:dataSource "Kossmann2012 Kossmann2013; abbrev, K12 K13" .
-aama:Berber-ghadames aamas:dataSourceNotes "" .
 aama:Berber-ghadames aamas:geodemoURL "URL" .
-aama:Berber-ghadames aamas:geodemoTXT "Ghadames is an Eastern Berber language spoken in the oasis of Ghadamès%% located in western Libya on the Libyan-Algerian border (30 deg 08' N%% 9 deg 30'  E." .
-
+aama:Berber-ghadames aamas:geodemoTxt "Ghadames is an Eastern Berber language spoken in the oasis of Ghadamès, located in western Libya on the Libyan-Algerian border (30 deg 08ZZ N, 9 deg 30ZZ  E." .
 
 #SCHEMATA: person
 bgh:person aamas:lang aama:Berber-ghadames .
@@ -31,22 +30,22 @@ bgh:person rdfs:range bgh:Person .
 bgh:Person rdfs:subClassOf bgh:MuExponent .
 bgh:person rdfs:subPropertyOf bgh:muProperty .
 bgh:Not_in_datastore aamas:lang aama:Berber-ghadames .
-bgh:Not_in_datastore rdf:type bgh:Person .
+bgh:Not_in_datastore rdf:type aamas:Person .
 bgh:Not_in_datastore rdfs:label "Not_in_datastore" .
 bgh:Person1 aamas:lang aama:Berber-ghadames .
-bgh:Person1 rdf:type bgh:Person .
+bgh:Person1 rdf:type aamas:Person .
 bgh:Person1 rdfs:label "Person1" .
 bgh:Person1ex aamas:lang aama:Berber-ghadames .
-bgh:Person1ex rdf:type bgh:Person .
+bgh:Person1ex rdf:type aamas:Person .
 bgh:Person1ex rdfs:label "Person1ex" .
 bgh:Person1in aamas:lang aama:Berber-ghadames .
-bgh:Person1in rdf:type bgh:Person .
+bgh:Person1in rdf:type aamas:Person .
 bgh:Person1in rdfs:label "Person1in" .
 bgh:Person2 aamas:lang aama:Berber-ghadames .
-bgh:Person2 rdf:type bgh:Person .
+bgh:Person2 rdf:type aamas:Person .
 bgh:Person2 rdfs:label "Person2" .
 bgh:Person3 aamas:lang aama:Berber-ghadames .
-bgh:Person3 rdf:type bgh:Person .
+bgh:Person3 rdf:type aamas:Person .
 bgh:Person3 rdfs:label "Person3" .
 
 #SCHEMATA: number
@@ -59,10 +58,10 @@ bgh:number rdfs:range bgh:Number .
 bgh:Number rdfs:subClassOf bgh:MuExponent .
 bgh:number rdfs:subPropertyOf bgh:muProperty .
 bgh:Plural aamas:lang aama:Berber-ghadames .
-bgh:Plural rdf:type bgh:Number .
+bgh:Plural rdf:type aamas:Number .
 bgh:Plural rdfs:label "Plural" .
 bgh:Singular aamas:lang aama:Berber-ghadames .
-bgh:Singular rdf:type bgh:Number .
+bgh:Singular rdf:type aamas:Number .
 bgh:Singular rdfs:label "Singular" .
 
 #SCHEMATA: vmorphClass
@@ -75,10 +74,10 @@ bgh:vmorphClass rdfs:range bgh:Vmorphclass .
 bgh:Vmorphclass rdfs:subClassOf bgh:MuExponent .
 bgh:vmorphClass rdfs:subPropertyOf bgh:muProperty .
 bgh:AffixSubjMark aamas:lang aama:Berber-ghadames .
-bgh:AffixSubjMark rdf:type bgh:Vmorphclass .
+bgh:AffixSubjMark rdf:type aamas:Vmorphclass .
 bgh:AffixSubjMark rdfs:label "AffixSubjMark" .
 bgh:Finite aamas:lang aama:Berber-ghadames .
-bgh:Finite rdf:type bgh:Vmorphclass .
+bgh:Finite rdf:type aamas:Vmorphclass .
 bgh:Finite rdfs:label "Finite" .
 
 #SCHEMATA: pos
@@ -91,10 +90,10 @@ bgh:pos rdfs:range bgh:Pos .
 bgh:Pos rdfs:subClassOf bgh:MuExponent .
 bgh:pos rdfs:subPropertyOf bgh:muProperty .
 bgh:Pronoun aamas:lang aama:Berber-ghadames .
-bgh:Pronoun rdf:type bgh:Pos .
+bgh:Pronoun rdf:type aamas:Pos .
 bgh:Pronoun rdfs:label "Pronoun" .
 bgh:Verb aamas:lang aama:Berber-ghadames .
-bgh:Verb rdf:type bgh:Pos .
+bgh:Verb rdf:type aamas:Pos .
 bgh:Verb rdfs:label "Verb" .
 
 #SCHEMATA: proClass
@@ -107,7 +106,7 @@ bgh:proClass rdfs:range bgh:Proclass .
 bgh:Proclass rdfs:subClassOf bgh:MuExponent .
 bgh:proClass rdfs:subPropertyOf bgh:muProperty .
 bgh:To_be_added aamas:lang aama:Berber-ghadames .
-bgh:To_be_added rdf:type bgh:Proclass .
+bgh:To_be_added rdf:type aamas:Proclass .
 bgh:To_be_added rdfs:label "To_be_added" .
 
 #SCHEMATA: status
@@ -120,7 +119,7 @@ bgh:status rdfs:range bgh:Status .
 bgh:Status rdfs:subClassOf bgh:MuExponent .
 bgh:status rdfs:subPropertyOf bgh:muProperty .
 bgh:NA aamas:lang aama:Berber-ghadames .
-bgh:NA rdf:type bgh:Status .
+bgh:NA rdf:type aamas:Status .
 bgh:NA rdfs:label "NA" .
 
 #SCHEMATA: stem
@@ -133,7 +132,7 @@ bgh:stem rdfs:range bgh:Stem .
 bgh:Stem rdfs:subClassOf bgh:MuExponent .
 bgh:stem rdfs:subPropertyOf bgh:muProperty .
 bgh:Base aamas:lang aama:Berber-ghadames .
-bgh:Base rdf:type bgh:Stem .
+bgh:Base rdf:type aamas:Stem .
 bgh:Base rdfs:label "Base" .
 
 #SCHEMATA: polarity
@@ -146,10 +145,10 @@ bgh:polarity rdfs:range bgh:Polarity .
 bgh:Polarity rdfs:subClassOf bgh:MuExponent .
 bgh:polarity rdfs:subPropertyOf bgh:muProperty .
 bgh:Affirmative aamas:lang aama:Berber-ghadames .
-bgh:Affirmative rdf:type bgh:Polarity .
+bgh:Affirmative rdf:type aamas:Polarity .
 bgh:Affirmative rdfs:label "Affirmative" .
 bgh:Negative aamas:lang aama:Berber-ghadames .
-bgh:Negative rdf:type bgh:Polarity .
+bgh:Negative rdf:type aamas:Polarity .
 bgh:Negative rdfs:label "Negative" .
 
 #SCHEMATA: tam
@@ -162,25 +161,25 @@ bgh:tam rdfs:range bgh:Tam .
 bgh:Tam rdfs:subClassOf bgh:MuExponent .
 bgh:tam rdfs:subPropertyOf bgh:muProperty .
 bgh:Active aamas:lang aama:Berber-ghadames .
-bgh:Active rdf:type bgh:Tam .
+bgh:Active rdf:type aamas:Tam .
 bgh:Active rdfs:label "Active" .
 bgh:Aorist aamas:lang aama:Berber-ghadames .
-bgh:Aorist rdf:type bgh:Tam .
+bgh:Aorist rdf:type aamas:Tam .
 bgh:Aorist rdfs:label "Aorist" .
 bgh:Future aamas:lang aama:Berber-ghadames .
-bgh:Future rdf:type bgh:Tam .
+bgh:Future rdf:type aamas:Tam .
 bgh:Future rdfs:label "Future" .
 bgh:Imperative aamas:lang aama:Berber-ghadames .
-bgh:Imperative rdf:type bgh:Tam .
+bgh:Imperative rdf:type aamas:Tam .
 bgh:Imperative rdfs:label "Imperative" .
 bgh:Imperfective aamas:lang aama:Berber-ghadames .
-bgh:Imperfective rdf:type bgh:Tam .
+bgh:Imperfective rdf:type aamas:Tam .
 bgh:Imperfective rdfs:label "Imperfective" .
 bgh:Perfective aamas:lang aama:Berber-ghadames .
-bgh:Perfective rdf:type bgh:Tam .
+bgh:Perfective rdf:type aamas:Tam .
 bgh:Perfective rdfs:label "Perfective" .
 bgh:Stative aamas:lang aama:Berber-ghadames .
-bgh:Stative rdf:type bgh:Tam .
+bgh:Stative rdf:type aamas:Tam .
 bgh:Stative rdfs:label "Stative" .
 
 #SCHEMATA: gender
@@ -193,13 +192,13 @@ bgh:gender rdfs:range bgh:Gender .
 bgh:Gender rdfs:subClassOf bgh:MuExponent .
 bgh:gender rdfs:subPropertyOf bgh:muProperty .
 bgh:Common aamas:lang aama:Berber-ghadames .
-bgh:Common rdf:type bgh:Gender .
+bgh:Common rdf:type aamas:Gender .
 bgh:Common rdfs:label "Common" .
 bgh:Fem aamas:lang aama:Berber-ghadames .
-bgh:Fem rdf:type bgh:Gender .
+bgh:Fem rdf:type aamas:Gender .
 bgh:Fem rdfs:label "Fem" .
 bgh:Masc aamas:lang aama:Berber-ghadames .
-bgh:Masc rdf:type bgh:Gender .
+bgh:Masc rdf:type aamas:Gender .
 bgh:Masc rdfs:label "Masc" .
 
 #SCHEMATA: rootClass
@@ -212,56 +211,44 @@ bgh:rootClass rdfs:range bgh:Rootclass .
 bgh:Rootclass rdfs:subClassOf bgh:MuExponent .
 bgh:rootClass rdfs:subPropertyOf bgh:muProperty .
 bgh:CCC aamas:lang aama:Berber-ghadames .
-bgh:CCC rdf:type bgh:Rootclass .
+bgh:CCC rdf:type aamas:Rootclass .
 bgh:CCC rdfs:label "CCC" .
 bgh:VCC aamas:lang aama:Berber-ghadames .
-bgh:VCC rdf:type bgh:Rootclass .
+bgh:VCC rdf:type aamas:Rootclass .
 bgh:VCC rdfs:label "VCC" .
 
-#PCLASSES:
+#LEXEMES: Berber-ghadames
 
-bgh:person aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-bgh:number aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-bgh:gender aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-bgh:pos aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-bgh:proClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-bgh:status aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
+#LexItems: Berber-ghadames
 
-#LEXEMES:
-
-##LexItems
 aama:Berber-ghadames-lmd a aamas:Lexeme ;
-	aamas:lang aama:Berber-ghadames ;
+	aamas:lang aama:berber-ghadames ;
 	rdfs:label "lmd" ;
-	bgh:pos bgh:Verb ;
-	aamas:lemma "ălmǝd" ;
-	aamas:gloss "learn" ;
-	bgh:rootClass bgh:CCC ;
+	bgh:pos bgh:Verb ; 
+	aamas:lemma "ălmǝd" ; 
+	aamas:gloss "learn" ; 
+	bgh:rootClass bgh:CCC ; 
 	.
 aama:Berber-ghadames-mtt a aamas:Lexeme ;
-	aamas:lang aama:Berber-ghadames ;
+	aamas:lang aama:berber-ghadames ;
 	rdfs:label "mtt" ;
-	bgh:pos bgh:Verb ;
-	aamas:lemma "măttit" ;
-	aamas:gloss "be small" ;
-	bgh:rootClass bgh:CCC ;
+	bgh:pos bgh:Verb ; 
+	aamas:lemma "măttit" ; 
+	aamas:gloss "be small" ; 
+	bgh:rootClass bgh:CCC ; 
 	.
 aama:Berber-ghadames-vtf a aamas:Lexeme ;
-	aamas:lang aama:Berber-ghadames ;
+	aamas:lang aama:berber-ghadames ;
 	rdfs:label "vtf" ;
-	bgh:pos bgh:Verb ;
-	aamas:lemma "atǝf" ;
-	aamas:gloss "enter" ;
-	bgh:rootClass bgh:VCC ;
+	bgh:pos bgh:Verb ; 
+	aamas:lemma "atǝf" ; 
+	aamas:gloss "enter" ; 
+	bgh:rootClass bgh:VCC ; 
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-VCC-imprtv-vTF
+#TERMCLUSTERS: Berber-ghadames
+
+#TERMCLUSTER: ghadames-V-Aff-VCC-imprtv-vTF
 
 bgh:ghadames-V-Aff-VCC-imprtv-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-imprtv-vTF" ;
@@ -269,55 +256,55 @@ bgh:ghadames-V-Aff-VCC-imprtv-vTF a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:IDbbd8e50d-8dd1-40c8-a6bb-c7bea21c712a a aamas:Term ;
+aama:ID38a3235a-4b5c-4195-b4e8-239956637107 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
-	bgh:polarity bgh:Affirmative ;
 	bgh:person bgh:Person2 ;
+	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperative ;
-	bgh:token "atǝf" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Singular ;
+	bgh:gender bgh:Common ;
+	bgh:token "atǝf" ;
 	.
 
-aama:ID1bf7eac6-5e68-444e-ad09-2d1e7223d362 a aamas:Term ;
+aama:ID22cc6d65-f55c-40a8-8ea4-8090582657e3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
-	bgh:polarity bgh:Affirmative ;
 	bgh:person bgh:Person2 ;
+	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperative ;
-	bgh:token "atǝf-ăt" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:gender bgh:Masc ;
-	bgh:number bgh:Plural ;
+	bgh:token "atǝf-ăt" ;
 	.
 
-aama:ID092eb71d-a6dd-4a39-a4fb-da4847a41120 a aamas:Term ;
+aama:ID9260260c-3a8f-4cc3-959d-4d25091f84a1 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
-	bgh:polarity bgh:Affirmative ;
 	bgh:person bgh:Person2 ;
+	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperative ;
-	bgh:token "atǝf-măt" ;
-	bgh:gender bgh:Fem ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:gender bgh:Fem ;
+	bgh:token "atǝf-măt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-VCC-imprtv-LMD
+#TERMCLUSTER: ghadames-V-Aff-VCC-imprtv-LMD
 
 bgh:ghadames-V-Aff-VCC-imprtv-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-imprtv-LMD" ;
@@ -325,55 +312,55 @@ bgh:ghadames-V-Aff-VCC-imprtv-LMD a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID35a0d572-3ba4-4879-9346-95043ceced97 a aamas:Term ;
+aama:ID7e5dcdf8-ddd9-4941-be2c-1fa2c22e3b44 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
-	bgh:polarity bgh:Affirmative ;
 	bgh:person bgh:Person2 ;
+	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperative ;
-	bgh:token "almǝd" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Singular ;
+	bgh:gender bgh:Common ;
+	bgh:token "almǝd" ;
 	.
 
-aama:IDcda47201-8179-4737-8adc-32223838cdf6 a aamas:Term ;
+aama:ID197b482b-3c81-4438-93ba-f7f459cfa3dd a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
-	bgh:polarity bgh:Affirmative ;
 	bgh:person bgh:Person2 ;
+	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperative ;
-	bgh:token "almǝd-ăt" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:gender bgh:Masc ;
-	bgh:number bgh:Plural ;
+	bgh:token "almǝd-ăt" ;
 	.
 
-aama:IDbf86e721-6e8d-469c-b66e-126389679d84 a aamas:Term ;
+aama:IDdd71e400-45a0-4e73-9b56-960c901a84f0 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imprtv-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
-	bgh:polarity bgh:Affirmative ;
 	bgh:person bgh:Person2 ;
+	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperative ;
-	bgh:token "almǝd-măt" ;
-	bgh:gender bgh:Fem ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:gender bgh:Fem ;
+	bgh:token "almǝd-măt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-VCC-perf-vTF
+#TERMCLUSTER: ghadames-V-Aff-VCC-perf-vTF
 
 bgh:ghadames-V-Aff-VCC-perf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-perf-vTF" ;
@@ -381,151 +368,151 @@ bgh:ghadames-V-Aff-VCC-perf-vTF a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID42a42329-cd51-4d97-9f41-448b6b5948d6 a aamas:Term ;
+aama:ID5ec94f95-8812-4670-894d-9419811f9410 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "utăf-ăʕ" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDcad76f46-e6b6-4ba7-b75f-56278f70c8d6 a aamas:Term ;
+aama:ID79031d6a-f4da-4387-b9d7-6ae664ed771a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-utăf-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDe98e5b0a-d28a-4904-a16c-ff62ef29db06 a aamas:Term ;
+aama:IDbc98fc07-ebe4-4ea9-9c58-9d7fb5d844ba a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-utăf" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDd44f1219-195a-4735-a82c-b4ec22cadec4 a aamas:Term ;
+aama:ID3414b4c8-c93c-43c1-8f5c-b313934cb2e0 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-utăf" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID47a319a7-2a86-4f32-bb20-6e0bf610464e a aamas:Term ;
+aama:ID2d1e93ec-86a3-49c2-a512-6f854cffcaba a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "n-utăf" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-utăf" ;
 	.
 
-aama:ID850dea4e-d090-4ccc-9dca-3a8932c76eb3 a aamas:Term ;
+aama:ID5192058f-4812-40e8-a759-46c89724bed5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-utăf-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID36f548b9-e942-4fcc-8a38-3fcc0372a33a a aamas:Term ;
+aama:ID0b094f65-94f8-4cce-a32e-2461baca4415 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-utăf-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID7ad50722-a1aa-401a-bcfd-00ca09417e86 a aamas:Term ;
+aama:IDb42041c6-5952-4ea1-b7d5-669cba98c810 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "utăf-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "utăf-ăn" ;
 	.
 
-aama:ID3ebcd105-d31c-456e-ae11-461431b5e455 a aamas:Term ;
+aama:ID4a94bb69-04c4-44fd-9c04-1766e127be36 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "utăf-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "utăf-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-CCC-stat-MTT
+#TERMCLUSTER: ghadames-V-Aff-CCC-stat-MTT
 
 bgh:ghadames-V-Aff-CCC-stat-MTT a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-stat-MTT" ;
@@ -533,151 +520,151 @@ bgh:ghadames-V-Aff-CCC-stat-MTT a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:IDd2007a6f-254f-4828-9cfc-ba416a786c9f a aamas:Term ;
+aama:ID0debed11-8c59-4316-9d2f-7cf352b2c022 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-mtt ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Stative ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "măttit-ăʕ" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID6ed875a5-1a97-49ed-b5a0-ba8166582f71 a aamas:Term ;
+aama:ID239f2c1e-4220-4277-860a-2919cc622a7e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-mtt ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Stative ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "măttit-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDe921fb97-3ad0-4c4b-a24b-2ab508cf3d74 a aamas:Term ;
+aama:IDaa27532b-24e9-4430-ba9e-e0d9b4649523 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-mtt ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Stative ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "măttit" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDa8b09a13-41b3-45b0-9cea-dc871a7669db a aamas:Term ;
+aama:IDcf22ec55-5a2c-4356-a5ad-0a3457e27b55 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-mtt ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Stative ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "măttit-ăt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID5cee7f24-8e28-4a42-ad16-0fd0ffa469dc a aamas:Term ;
+aama:ID89340771-7f8f-40c3-b41b-d5edc52a61df a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-mtt ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Stative ;
-	bgh:token "măttit-it" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "măttit-it" ;
 	.
 
-aama:IDbd0e4c3d-3185-4bec-960b-9aba4c911be0 a aamas:Term ;
+aama:IDe8f1b1e0-1b06-4306-b151-162c48adb4ea a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-mtt ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Stative ;
-	bgh:token "măttit-it" ;
-	bgh:gender bgh:Masc ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	.
-
-aama:ID761c843d-d986-4c0e-ab13-545e927528cb a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
-	aamas:lexeme aama:Berber-ghadames-mtt ;
-	bgh:polarity bgh:Affirmative ;
-	bgh:pos bgh:Verb ;
-	bgh:rootClass bgh:CCC ;
-	bgh:stem bgh:Base ;
-	bgh:tam bgh:Stative ;
-	bgh:token "măttit-it" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	.
-
-aama:ID9da4ddc6-c05a-47b3-badd-84c5e5a1ce3c a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
-	aamas:lexeme aama:Berber-ghadames-mtt ;
-	bgh:polarity bgh:Affirmative ;
-	bgh:pos bgh:Verb ;
-	bgh:rootClass bgh:CCC ;
-	bgh:stem bgh:Base ;
-	bgh:tam bgh:Stative ;
-	bgh:token "măttit-it" ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "măttit-it" ;
 	.
 
-aama:IDfc908757-f8fd-4f57-b1db-4532cf43ce87 a aamas:Term ;
+aama:IDcc6872e7-0f20-4f12-a12c-612baeaa1ba9 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-mtt ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Stative ;
-	bgh:token "măttit-it" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "măttit-it" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-VCC-fut-vTF
+aama:IDecd43e32-281b-4fd5-8ecb-8c5bf60f1df7 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
+	aamas:lexeme aama:Berber-ghadames-mtt ;
+	bgh:polarity bgh:Affirmative ;
+	bgh:pos bgh:Verb ;
+	bgh:rootClass bgh:CCC ;
+	bgh:stem bgh:Base ;
+	bgh:tam bgh:Stative ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "măttit-it" ;
+	.
+
+aama:ID8257143a-abee-4670-b443-f6ba61bec8e7 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-V-Aff-CCC-stat-MTT ;
+	aamas:lexeme aama:Berber-ghadames-mtt ;
+	bgh:polarity bgh:Affirmative ;
+	bgh:pos bgh:Verb ;
+	bgh:rootClass bgh:CCC ;
+	bgh:stem bgh:Base ;
+	bgh:tam bgh:Stative ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "măttit-it" ;
+	.
+
+#TERMCLUSTER: ghadames-V-Aff-VCC-fut-vTF
 
 bgh:ghadames-V-Aff-VCC-fut-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-fut-vTF" ;
@@ -685,151 +672,151 @@ bgh:ghadames-V-Aff-VCC-fut-vTF a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID867c1356-0bff-487b-8701-394b1d45baf2 a aamas:Term ;
+aama:ID7adc7066-1c10-4e4d-a3a1-a168143af6a2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "utăf" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID3556c199-1726-4dbe-a557-6537b2be239b a aamas:Term ;
+aama:ID499fa49e-91fc-46c2-91d4-8f6b2a724e75 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "t-utăf" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
 	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
+	bgh:gender bgh:Common ;
+	bgh:token "t-utăf" ;
 	.
 
-aama:ID2fa4698a-1159-4bcf-85f6-7b11bd318531 a aamas:Term ;
+aama:ID6e4c7c56-eaae-41da-b993-5b9be8e036a1 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-utăf" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDac0a3ade-6770-46f5-9482-6dc054c5d158 a aamas:Term ;
+aama:ID4c54fd54-239e-4d67-88a9-c54012ca0754 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-utăf" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID267e32d7-847b-4c29-9505-2d90d9e315bc a aamas:Term ;
+aama:ID93c4fd48-7fad-4564-a202-921bf74f8910 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "n-utăf" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-utăf" ;
 	.
 
-aama:ID0839a32a-49bb-48e0-9ac8-2d7ae32a4abe a aamas:Term ;
+aama:ID1f2caee4-97ef-4d05-8df0-1f5557544ceb a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-utăf-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDb326219b-c9f9-43c8-ae78-bd6b41aa8a3d a aamas:Term ;
+aama:IDa5b4b4d2-8636-40f2-a264-de89c961c018 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-utăf -măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID1e492d31-40df-4382-92f5-81e259006780 a aamas:Term ;
+aama:IDc7852556-3678-49e4-adc2-763d3fff4751 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "utăf-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "utăf-ăn" ;
 	.
 
-aama:IDc924a24c-1eec-4677-bfe9-5652cc84d8ad a aamas:Term ;
+aama:ID54e11d41-35b8-4cd8-b269-d74295221e64 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-fut-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "utăf-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "utăf-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-VCC-aorist-vTF
+#TERMCLUSTER: ghadames-V-Aff-VCC-aorist-vTF
 
 bgh:ghadames-V-Aff-VCC-aorist-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-aorist-vTF" ;
@@ -837,151 +824,151 @@ bgh:ghadames-V-Aff-VCC-aorist-vTF a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID46d95e49-036d-41b7-b3bd-2f3c106bec80 a aamas:Term ;
+aama:ID9d06b9c2-9a73-4284-b00c-bcd29edde516 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "atǝf-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID68dd4e6f-7bdb-498d-b800-ff46568df364 a aamas:Term ;
+aama:IDde0f32dd-039e-44be-8ac8-782808c74c8f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-atǝf-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID2375e70f-170f-4079-95d4-a2aeca51876e a aamas:Term ;
+aama:ID4de783ee-eff5-4e27-ade6-aa1ced4bffd5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-atǝf" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID7ab04e7f-3af7-44d2-b8e9-4f5a514e8b63 a aamas:Term ;
+aama:ID5518da15-6ac4-4169-9848-844b87778958 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-atǝf" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID5756136e-659e-4ab8-a1ac-85ac5ada0187 a aamas:Term ;
+aama:ID43567246-d6c4-4aa3-a883-661479102425 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
-	bgh:token "n-atǝf" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-atǝf" ;
 	.
 
-aama:ID530acb01-3271-423d-be62-e1708f8027b3 a aamas:Term ;
+aama:IDd5ffc6c0-ebbd-4bd0-a468-9febeb4aa324 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-atǝf-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID83b44528-c1ef-4a85-9474-24e1c2bce0f3 a aamas:Term ;
+aama:ID3c682e9d-ce16-4c73-b557-32db1614f653 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-atǝf-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDf8e8c1fc-037e-4821-a420-bb1e1eb2d036 a aamas:Term ;
+aama:ID5f234ae1-2333-475c-a5ec-c88bb91c1721 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
-	bgh:token "atǝf-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "atǝf-ăn" ;
 	.
 
-aama:IDfad0b7ef-f1ef-4802-b73a-a75e57e1bfde a aamas:Term ;
+aama:ID22ae8e62-062d-4364-ad67-8c714c42bf34 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-aorist-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
-	bgh:token "atǝf-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "atǝf-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-CCC-aorist-LMD
+#TERMCLUSTER: ghadames-V-Aff-CCC-aorist-LMD
 
 bgh:ghadames-V-Aff-CCC-aorist-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-aorist-LMD" ;
@@ -989,151 +976,151 @@ bgh:ghadames-V-Aff-CCC-aorist-LMD a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:IDc4c01cd9-fd83-4ee2-9d40-30fd1405e205 a aamas:Term ;
+aama:IDbedf77b4-9501-4fcf-9d81-a47fc3c199be a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "ălmǝd-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDa32fa66e-fdbb-4744-97f0-40702c6d03c7 a aamas:Term ;
+aama:IDf07d8598-e202-42c8-944b-af0a047285b0 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-ălmǝd-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID3405add5-389d-461e-8af7-8938d598d39e a aamas:Term ;
+aama:ID8aba494f-bb9b-4f68-b3f0-a1f00c57057e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-ălmǝd" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDc9a97945-ae80-43e0-a4cd-5d183463e7b1 a aamas:Term ;
+aama:ID027f6f39-cec3-4d98-b53e-578be6bfd1ce a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ălmǝd" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID8ac06477-ba00-4b4c-8bfa-2a048bf55397 a aamas:Term ;
+aama:ID7647bd07-a8ba-4abc-814d-c79676b9c9b6 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
-	bgh:token "n-ălmǝd" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-ălmǝd" ;
 	.
 
-aama:ID0950e214-0502-4b30-b784-ed4913e87f78 a aamas:Term ;
+aama:IDc62c6d44-9e90-4367-a62d-c6f4459fff24 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-ălmǝd-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID4de556f4-5666-46b8-94d3-d968b0acc770 a aamas:Term ;
+aama:ID55b1aaf4-d018-4c16-aac6-e5288abfdaa3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ălmǝd-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID9b214d4f-3cb0-48cf-9b39-581ecb84dc1b a aamas:Term ;
+aama:ID1e6f0b0a-ca93-4e31-ae62-96a1856611c3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
-	bgh:token "ălmǝd-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "ălmǝd-ăn" ;
 	.
 
-aama:ID28bf8d42-ca8d-4ff9-a961-2d44d21f9ef8 a aamas:Term ;
+aama:ID5ecbfacb-73c8-4212-b9fb-d850ea2cfaf2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-aorist-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Aorist ;
-	bgh:token "ălmǝd-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "ălmǝd-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-VCC-imperf-vTF
+#TERMCLUSTER: ghadames-V-Aff-VCC-imperf-vTF
 
 bgh:ghadames-V-Aff-VCC-imperf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-VCC-imperf-vTF" ;
@@ -1141,151 +1128,151 @@ bgh:ghadames-V-Aff-VCC-imperf-vTF a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID3ef47889-0aba-459e-94d1-525e08ebb334 a aamas:Term ;
+aama:ID37af2240-8747-467a-a3f3-0787210d7620 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "ttafăf-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID8fa8c8d8-b5e2-4b6f-b95c-7e203413ff17 a aamas:Term ;
+aama:IDa166f988-0410-4553-aa30-3e8da46b4d9b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-ttafăf-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID64b748f7-2721-4388-8bb8-1cf7f45f1f27 a aamas:Term ;
+aama:ID4c9b577f-3893-466a-aecf-823d07047ce9 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-ttafăf" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID8579edc7-29f9-4c8d-a082-89224ac4194f a aamas:Term ;
+aama:ID3ea6d097-3bc6-4d42-8903-b1c2cb2e23f7 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ttafăf" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID8a6490e8-0e72-4f52-92d4-729a682bb710 a aamas:Term ;
+aama:IDd7f8450e-4f3a-410a-9d7b-068a123f6713 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "n-ttafăf" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-ttafăf" ;
 	.
 
-aama:ID32babbc5-d31a-468e-9e1a-958f2848be49 a aamas:Term ;
+aama:ID55fa0224-2105-4d53-8f0e-4f98bc8f07f0 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-ttafăf-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDcf0779e9-1eaf-41b6-a16e-81a87a23e25f a aamas:Term ;
+aama:ID9173876c-5dbf-4af2-83f0-3fd5cdf9eda5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ttafăf-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID466089b7-b8a3-4e2e-8f80-3844cbedb969 a aamas:Term ;
+aama:ID3138181e-bb05-44dd-8faf-97fb6b7e1325 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "ttafăf-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "ttafăf-ăn" ;
 	.
 
-aama:ID689be437-1342-4d24-aa6c-df38e4982210 a aamas:Term ;
+aama:ID573c0888-fec4-4b76-bac7-f320686bcf70 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "ttafăf-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "ttafăf-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-CCC-imperf-LMD
+#TERMCLUSTER: ghadames-V-Aff-CCC-imperf-LMD
 
 bgh:ghadames-V-Aff-CCC-imperf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-imperf-LMD" ;
@@ -1293,151 +1280,151 @@ bgh:ghadames-V-Aff-CCC-imperf-LMD a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID656aefb5-92de-4ceb-96e1-ebdbfda11f89 a aamas:Term ;
+aama:ID8cfe87bf-4cdf-4468-a983-8d24f02cedd7 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "lămmăd-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID46102ffc-ab2b-4698-93f7-ec5a8c806b63 a aamas:Term ;
+aama:IDc028bd4e-014a-4d80-866d-a477e8196e30 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-lămmăd-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDa310c00d-4e12-46ef-86c1-41f89837d75e a aamas:Term ;
+aama:ID0c4bf882-7101-445f-b618-0c46dadf1378 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-lămmăd" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDf6c97ebc-ff3c-401a-80c9-6c84b8ebeb32 a aamas:Term ;
+aama:ID1d786830-2b16-4a9b-8396-b4a91c95e9cf a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-lămmăd" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID589c6ebf-d5c8-4662-829c-32660233b78f a aamas:Term ;
+aama:ID627cb10d-b9cd-414e-82f4-30230a6b0e0a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "n-lămmăd" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-lămmăd" ;
 	.
 
-aama:ID78eb40cf-8bfc-4564-8ef1-6020c8e2a801 a aamas:Term ;
+aama:ID4d78fb47-7004-4160-83f9-d04d047e455d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-lămmăd-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDc733a708-7798-4532-ad44-2eaeca33b29c a aamas:Term ;
+aama:ID4eb7dc48-325f-4920-9693-7c7350a76644 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-lămmăd-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID4835e2f0-d1a8-47a1-b4e9-fe916a86bc9c a aamas:Term ;
+aama:IDe77945cc-d61b-4db0-acfe-36285391da93 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "lămmăd-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "lămmăd-ăn" ;
 	.
 
-aama:ID7e2cc962-7a37-4aab-b033-cd22a2ca0d18 a aamas:Term ;
+aama:ID52612488-e58d-4e4a-95f0-2268d7b53e83 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "lămmăd-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "lămmăd-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Neg-VCC-imperf-vTF
+#TERMCLUSTER: ghadames-V-Neg-VCC-imperf-vTF
 
 bgh:ghadames-V-Neg-VCC-imperf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-VCC-imperf-vTF" ;
@@ -1445,151 +1432,151 @@ bgh:ghadames-V-Neg-VCC-imperf-vTF a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:IDfe905a5b-62e5-415f-a5b7-5e2da3ab33ad a aamas:Term ;
+aama:ID54a41c60-f563-440d-ab5c-bce09f1011f7 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "ttitǝf-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID8c591385-bb38-42e0-83ae-a88d3f96f660 a aamas:Term ;
+aama:ID08db826b-ebea-4765-ad71-bfe1110ac13e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-ttitǝf-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDbf35a24b-3a99-4889-af79-f95791c4a384 a aamas:Term ;
+aama:ID92538805-1126-4e58-811d-9a5568c284b1 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-ttitǝf" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDee134523-f4a4-4229-8504-8525a4320cbe a aamas:Term ;
+aama:IDf71ea123-ab21-4345-993c-0d22497c8eba a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ttitǝf" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDc1292574-d3db-4b07-adc9-55dfcb82a04d a aamas:Term ;
+aama:ID68bb1d14-3006-481f-adbf-e3cf2ad18da5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "n-ttitǝf" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-ttitǝf" ;
 	.
 
-aama:IDc81bcf97-b420-4f31-a515-f94a53383196 a aamas:Term ;
+aama:ID4367c333-bb0d-419b-a5f1-679b25d1aecb a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-ttitǝf-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID984a25c5-e139-4b83-aff0-c4771dbfae3b a aamas:Term ;
+aama:ID591081f3-a4e5-4d86-9ddc-7986dfe4191c a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ttitǝf-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID79445e33-5b1d-4ffa-9667-bef95f6ae0e4 a aamas:Term ;
+aama:ID5fa1594b-5ab9-4072-b28d-8e65eb477142 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "ttitǝf-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "ttitǝf-ăn" ;
 	.
 
-aama:IDc432898f-c7a0-45f8-aaf3-a398f268de3b a aamas:Term ;
+aama:ID136d80c1-77c3-46f7-bb17-1325f6d3309d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-imperf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "ttitǝf-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "ttitǝf-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Neg-CCC-imperf-LMD
+#TERMCLUSTER: ghadames-V-Neg-CCC-imperf-LMD
 
 bgh:ghadames-V-Neg-CCC-imperf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-CCC-imperf-LMD" ;
@@ -1597,151 +1584,151 @@ bgh:ghadames-V-Neg-CCC-imperf-LMD a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID4b29d707-d6dc-4bc6-93e9-2e265d3c158d a aamas:Term ;
+aama:ID99d6507f-4e71-4df0-bfd0-568376ed0c0f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "lǝmmǝd-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDfb0799be-d5d1-4144-b48c-6b4151fa6f48 a aamas:Term ;
+aama:IDc7d276d4-58e8-4a3d-9bff-9130d92832e5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-lǝmmǝd-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDcf3d32e5-805d-4d70-afa5-228d3044f1c9 a aamas:Term ;
+aama:IDbd5a55c2-fa3e-43bd-8f3e-4819945eb84b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-lǝmmǝd" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDb8bf8b5e-e1da-40f6-bf83-b4aa36f5f31b a aamas:Term ;
+aama:IDd4d18413-d613-469c-bf34-52e1da4e202b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-lǝmmǝd" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID2869e14c-57b6-4eef-bdc8-5b0f3e7170f5 a aamas:Term ;
+aama:IDf8eb6b57-21de-4689-8e8e-5b98368a146b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "n-lǝmmǝd" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-lǝmmǝd" ;
 	.
 
-aama:ID01b36d84-dc46-4dd0-bfa5-cc07f0a432dc a aamas:Term ;
+aama:ID6984e19c-3a96-48a5-a953-aa20402bb99e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-lǝmmǝd-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDa8ee80cc-6636-4015-af07-8e6382a93153 a aamas:Term ;
+aama:ID7de7195c-f092-4dec-8d79-07b6704a38e6 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-lǝmmǝd-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDd05bd1d3-48c7-4bcb-8070-a1642de7414e a aamas:Term ;
+aama:ID7cd7aafa-da19-45ca-8c42-64ccad9386a5 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "lǝmmǝd-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "lǝmmǝd-ăn" ;
 	.
 
-aama:ID70190c8a-db5e-49ec-b39e-54eeeb11a19e a aamas:Term ;
+aama:IDcd362915-ac03-4bc1-bb53-04509cd3477e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-imperf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Imperfective ;
-	bgh:token "lǝmmǝd-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "lǝmmǝd-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-CCC-perf-LMD
+#TERMCLUSTER: ghadames-V-Aff-CCC-perf-LMD
 
 bgh:ghadames-V-Aff-CCC-perf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-perf-LMD" ;
@@ -1749,151 +1736,151 @@ bgh:ghadames-V-Aff-CCC-perf-LMD a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID05308ef5-2022-41b9-8979-9a3b364a17ad a aamas:Term ;
+aama:ID941f06f4-0c0b-4aca-98f9-78a123191569 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "ǝlmăd-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID68ea76dc-469f-41a5-9967-6cfa358bf43f a aamas:Term ;
+aama:IDca0182d2-ffff-4be8-92bc-51a6b2c9ca8a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-ǝlmăd-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID103791b4-27c4-468f-8240-0ee423262b6f a aamas:Term ;
+aama:IDb599dd37-380b-424f-87d2-84c8451420bc a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-ǝlmăd" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID89371923-39c9-4911-be45-9b7012b59a78 a aamas:Term ;
+aama:ID1736da46-c208-4621-8725-a498da66b40d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ǝlmăd" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDc046992f-64e3-4ff8-b848-6cbfa920eb03 a aamas:Term ;
+aama:ID4275e108-aa10-4704-9ff2-08a7d530f57d a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "n-ǝlmăd" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-ǝlmăd" ;
 	.
 
-aama:ID7dcdb454-2de4-4ddb-a0d0-645b78d47437 a aamas:Term ;
+aama:IDb960f92d-1c64-40c7-9ab1-c714d8faeaf7 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-ǝlmăd-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID3be93596-e6f4-4361-9c86-2551de5382f5 a aamas:Term ;
+aama:ID811c11f8-28c4-4a6a-b184-099afff30e1f a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ǝlmăd-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDeff2b0f5-cb12-4f96-9ffd-0995dc163a8f a aamas:Term ;
+aama:ID97e81cad-ee3b-43c3-840d-dd8a7e07cda8 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "ǝlmăd-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "ǝlmăd-ăn" ;
 	.
 
-aama:IDc41afc69-0f63-499c-a55e-245ca8d16b51 a aamas:Term ;
+aama:ID1f3acf43-29b2-4d18-aa07-1cd83b3b7ec2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "ǝlmăd-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "ǝlmăd-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Neg-VCC-perf-vTF
+#TERMCLUSTER: ghadames-V-Neg-VCC-perf-vTF
 
 bgh:ghadames-V-Neg-VCC-perf-vTF a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-VCC-perf-vTF" ;
@@ -1901,151 +1888,151 @@ bgh:ghadames-V-Neg-VCC-perf-vTF a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:IDb40efa61-aafd-43ee-b328-a24208d67ceb a aamas:Term ;
+aama:IDa43149fb-8a0d-4e44-b35c-2c9b3d81f591 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "utef-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDffd1a757-1ba0-41e3-bdf5-49f689eb7086 a aamas:Term ;
+aama:ID4e12600f-8ee5-4320-9000-b77cd7983f80 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-utef-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID5574a5ab-4e1a-4342-84fb-e7dc9103f82c a aamas:Term ;
+aama:ID7226ff28-7e20-4fc3-be1e-0af55cd12fa3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-utef" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID935ac9fa-0887-477c-bedc-fd698be7aa3b a aamas:Term ;
+aama:ID787528c9-f9d1-4ef4-a995-91395a62028c a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-utef" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDe18c3dc9-7786-4a8d-ba3c-a0cb1bec8d22 a aamas:Term ;
+aama:IDb8ba0154-75ec-4fd8-b4a1-9762461acb23 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "n-utef" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-utef" ;
 	.
 
-aama:ID1bf1c8e4-de40-4b57-a06c-d4bfc0ff3ecb a aamas:Term ;
+aama:ID8cb73adb-62ad-4dab-a4c0-5d431df99005 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-utef-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:ID5aa4ebbe-6cf3-4251-961b-13c694511fce a aamas:Term ;
+aama:ID523e1b30-2822-4c8a-856c-7fa017748c13 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-utef-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDf54e440b-bf7d-47bc-af71-c2d372fc6b19 a aamas:Term ;
+aama:IDa964eb3f-8e96-483a-9855-a7f7ab0ef8d9 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "utef-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "utef-ăn" ;
 	.
 
-aama:ID7085c8ff-e25b-4761-af9b-35b9b262483a a aamas:Term ;
+aama:IDb8fb9189-53e1-4191-af54-61a7f0545a2b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-VCC-perf-vTF ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-vtf ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:VCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "utef-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "utef-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Neg-CCC-perf-LMD
+#TERMCLUSTER: ghadames-V-Neg-CCC-perf-LMD
 
 bgh:ghadames-V-Neg-CCC-perf-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Neg-CCC-perf-LMD" ;
@@ -2053,151 +2040,151 @@ bgh:ghadames-V-Neg-CCC-perf-LMD a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID179ccca6-7cec-478d-9797-7fba1e53f924 a aamas:Term ;
+aama:ID2ac8dabe-5177-4ffb-b525-8a7c63f79dd3 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "ǝlmed-ăʕ" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDc4c857fd-52cf-4da4-a1f8-c0ea2939f69f a aamas:Term ;
+aama:IDccd5a63b-ceea-4acb-a5d6-c235a75678fe a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-ǝlmed-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID90d66273-53d1-47d3-8f40-c70e6c01006d a aamas:Term ;
+aama:IDf65c07b4-cb6f-4b2d-a68c-a7d764e9f439 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-ǝlmed" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDea645e0b-53b0-4c32-8697-4ea3d2246a52 a aamas:Term ;
+aama:ID21601bb7-a273-4f72-ba49-cb26b3472788 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ǝlmed" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDa7d38a37-3670-4aaa-a2e6-ec39bacf1faa a aamas:Term ;
+aama:IDef740aa0-28e9-42db-99b3-aeb33685eb02 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "n-ǝlmed" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-ǝlmed" ;
 	.
 
-aama:IDae45a688-c50a-496b-88fa-e6059963ab0a a aamas:Term ;
+aama:ID11d3c425-731c-431c-82cb-a604ea63a3c8 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-ǝlmed-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDe9b668bd-37ac-424f-8112-926a0e99333b a aamas:Term ;
+aama:ID76f437a5-6fe0-4eb9-b260-e0b2027fb18b a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ǝlmed-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDd80603e6-cecc-4d0c-8cd7-6f297c7ca870 a aamas:Term ;
+aama:ID78877b58-c6f5-4f77-9947-36cfc7f0b514 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "ǝlmed-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "ǝlmed-ăn" ;
 	.
 
-aama:IDd3a2bba5-fb42-47a3-82a3-e2e340d6c575 a aamas:Term ;
+aama:IDc3b5c6f9-9bb4-406b-bcc7-a8b8002cb540 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Neg-CCC-perf-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Negative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Perfective ;
-	bgh:token "ǝlmed-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "ǝlmed-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-V-Aff-CCC-fut-LMD
+#TERMCLUSTER: ghadames-V-Aff-CCC-fut-LMD
 
 bgh:ghadames-V-Aff-CCC-fut-LMD a aamas:Termcluster ;
 	rdfs:label "ghadames-V-Aff-CCC-fut-LMD" ;
@@ -2205,151 +2192,151 @@ bgh:ghadames-V-Aff-CCC-fut-LMD a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:IDbf9d46fa-d4ea-42cd-b461-d8e3553c8b25 a aamas:Term ;
+aama:ID80026064-e12a-49cf-a054-271a3c5c7985 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "ǝlmăd" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID81df3c68-0ca3-4d01-ab09-7302db854e29 a aamas:Term ;
+aama:ID5953468c-9b5d-498a-aad3-c7b74751fc42 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "t-ǝlmăd" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
 	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
+	bgh:gender bgh:Common ;
+	bgh:token "t-ǝlmăd" ;
 	.
 
-aama:IDa893b1d8-8d8c-417c-9958-95ab1edea39c a aamas:Term ;
+aama:IDa6f7a1ad-6315-49df-a3e3-f8bb84ccb9b2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "y-ǝlmăd" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:ID2729947e-a6cb-406e-8a68-745b6863b83e a aamas:Term ;
+aama:IDe0aa60b9-aa8b-42d9-934d-895e60c3c576 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ǝlmăd" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
 	.
 
-aama:IDcd3fcb63-ac0a-4ae4-a19c-e3e90765f410 a aamas:Term ;
+aama:ID39074c2f-7470-4d2c-9bf1-3f58a45fe516 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "n-ǝlmăd" ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-ǝlmăd" ;
 	.
 
-aama:IDa3be3d88-1163-4bb5-90b3-7314ce90f384 a aamas:Term ;
+aama:ID9cfc30cb-39f8-4fe4-a923-dc1b7be83769 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-ǝlmăd-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDe5bd18cc-bb87-4001-a434-4b988c112c02 a aamas:Term ;
+aama:ID6028f84d-231e-4f6f-b3fe-b259701bf99e a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "t-ǝlmăd -măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
 	.
 
-aama:IDad66967c-5b9e-4e0b-8c41-e9014aafa5f7 a aamas:Term ;
+aama:ID30db7c01-2800-4379-87f8-aa97a10afea2 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "ǝlmăd-ăn" ;
+	bgh:vmorphClass bgh:Finite ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
+	bgh:token "ǝlmăd-ăn" ;
 	.
 
-aama:ID09b6b1fa-9eb9-48bc-9ccf-9d6f380b5631 a aamas:Term ;
+aama:IDfd08e91f-3b38-4acd-993a-fc103fd5b1ea a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-V-Aff-CCC-fut-LMD ;
-	bgh:vmorphClass bgh:Finite ;
 	aamas:lexeme aama:Berber-ghadames-lmd ;
 	bgh:polarity bgh:Affirmative ;
 	bgh:pos bgh:Verb ;
 	bgh:rootClass bgh:CCC ;
 	bgh:stem bgh:Base ;
 	bgh:tam bgh:Future ;
-	bgh:token "ǝlmăd-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:Finite ;
 	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "ǝlmăd-năt" ;
 	.
 
-#TERMCLUSTER:  ghadames-VSubjMarkers
+#TERMCLUSTER: ghadames-VSubjMarkers
 
 bgh:ghadames-VSubjMarkers a aamas:Termcluster ;
 	rdfs:label "ghadames-VSubjMarkers" ;
@@ -2357,391 +2344,391 @@ bgh:ghadames-VSubjMarkers a aamas:Termcluster ;
 	rdfs:comment "K13p. :: 'active' inclusive/exclusive distinction reported by Lanfry1968; to be inserted in verb pdgms if verified" 
 	.
 
-aama:IDf514d218-9e73-4cb4-96f8-af73f6484ef0 a aamas:Term ;
+aama:IDa0a69199-aba5-4a11-a1f4-34af9dfda98a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
-	bgh:token "..." ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Imperative ;
 	bgh:number bgh:Singular ;
-	bgh:tam bgh:Imperative ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
+	bgh:token "..." ;
 	.
 
-aama:ID18370a83-2a54-4d2a-bb95-387ca2e1c593 a aamas:Term ;
+aama:IDa8340784-8486-4a08-a8ca-f680eadac155 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
-	bgh:token "...-ăt" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Imperative ;
 	bgh:number bgh:Plural ;
-	bgh:tam bgh:Imperative ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "...-ăt" ;
 	.
 
-aama:IDda52577b-c245-49ea-82a3-201355f7d8a3 a aamas:Term ;
+aama:ID0baec958-7b5a-4b83-ae5b-c4ad825183da a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Imperative ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
 	bgh:token "...-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Imperative ;
 	.
 
-aama:ID764ac472-b1b0-44d4-ba37-8468195e7309 a aamas:Term ;
+aama:IDd1e7fa0b-ccd9-4260-9eca-29f8b835ffb9 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
 	bgh:token "...-ăʕ " ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Active ;
 	.
 
-aama:ID0396b187-dc25-40c3-9bf2-5ea600717a34 a aamas:Term ;
+aama:ID2bae8d2b-d1fc-414c-9105-323669395423 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
 	bgh:token "t-...-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Active ;
 	.
 
-aama:IDf0754292-5400-4e60-bd27-7f94feabb7f0 a aamas:Term ;
+aama:ID7a35a739-d9b3-49e0-a206-041df68a5c64 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
-	bgh:token "y-..." ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Active ;
+	bgh:token "y-..." ;
 	.
 
-aama:ID884bf78d-69bf-4f0c-9308-af51bae19e37 a aamas:Term ;
+aama:IDbbb87984-975b-4444-977b-671986d29279 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
-	bgh:token "t-..." ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
 	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Active ;
+	bgh:token "t-..." ;
 	.
 
-aama:IDd64cbc83-f37b-4c61-a783-cb7846721de8 a aamas:Term ;
+aama:ID22e48c01-1c04-4944-98ea-0d5c980805e9 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
-	bgh:token "n-..." ;
-	bgh:gender bgh:Common ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Plural ;
 	bgh:person bgh:Person1ex ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Active ;
-	.
-
-aama:ID55657961-61b0-4655-94e3-d71f53184ed1 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "n-...-ăt" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person1in ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Active ;
-	.
-
-aama:ID10a48656-e693-43cc-a65c-3f383e144a29 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "n-...-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person1in ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Active ;
-	.
-
-aama:IDfe2346c6-3c33-4a36-8cc4-bb9d93212754 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "t-...-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Active ;
-	.
-
-aama:ID7dedd15b-2079-4e38-b488-d5e7e634f1f1 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "t-...-măt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Active ;
-	.
-
-aama:ID49894e88-0da5-4e89-86bc-ab2c6ee43557 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-ăn" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Active ;
-	.
-
-aama:ID2297a1be-c152-4dd3-87c5-8c3cea8c882b a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Active ;
-	.
-
-aama:ID2d7d424f-3aab-4e3b-b7cd-3d97e48329fb a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-ăʕ" ;
 	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:ID586e035d-743b-455a-bca6-772d5bfc68b2 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-ǝt" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:IDc0556e19-20b8-4316-8f1e-cfbc6a09c7b2 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "..." ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:IDbd92453a-2784-4847-9dc9-1c0ccf577632 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-ăt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:IDbfb85a99-551e-4c19-b7e6-9381a949f184 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-it" ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:IDf899910d-24df-43ac-853c-f08ddf5c6b1b a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-it" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:ID5b1e050b-21e3-469c-9571-55d588cbff24 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-it" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:ID09e14632-921c-411c-ae5e-44cf72531656 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-it" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:IDfc5fc59d-468f-4866-9fe0-3d616003c558 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "...-it" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Stative ;
-	.
-
-aama:ID89fe8dba-b49d-404a-ba7d-98cda26810a2 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "..." ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Future ;
-	.
-
-aama:ID33fdc51c-045f-4104-b82e-688012e74ed3 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "t-..." ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Future ;
-	.
-
-aama:IDab3988a6-4ebb-451c-9655-e67374f39a48 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "y-..." ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Future ;
-	.
-
-aama:IDd3272150-1c59-48ea-a6fc-d4e80503ea16 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
-	bgh:token "t-..." ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Singular ;
-	bgh:tam bgh:Future ;
-	.
-
-aama:ID49f9b5e5-a92d-4296-8e2d-a4e443a3cf38 a aamas:Term ;
-	aamas:lang aama:Berber-ghadames ;
-	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
-	bgh:pos bgh:Verb ;
 	bgh:token "n-..." ;
-	bgh:gender bgh:Common ;
-	bgh:person bgh:Person1 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Future ;
 	.
 
-aama:ID2aaf35af-6407-48d6-9e67-f0354ead7060 a aamas:Term ;
+aama:ID1581eec5-c25b-4090-b488-6c9377a6a497 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person1in ;
+	bgh:gender bgh:Masc ;
+	bgh:token "n-...-ăt" ;
+	.
+
+aama:IDfe1731f5-d26d-476f-9c8f-c675c00abd73 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person1in ;
+	bgh:gender bgh:Fem ;
+	bgh:token "n-...-măt" ;
+	.
+
+aama:IDb261c81d-3ff4-4e46-b95b-1137be88a219 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "t-...-ăm" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Future ;
 	.
 
-aama:ID2b32056f-11e6-4d67-be48-15dc97af0f87 a aamas:Term ;
+aama:ID5c69ba15-3f5d-4de8-aa68-7eccf2392684 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
-	bgh:token "t-... -măt" ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
 	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person2 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Future ;
+	bgh:token "t-...-măt" ;
 	.
 
-aama:IDebae775a-445f-46c6-8434-08f89a861156 a aamas:Term ;
+aama:ID7948c74f-d01f-479d-a3e2-a686a5e3f3ca a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
 	bgh:token "...-ăn" ;
-	bgh:gender bgh:Masc ;
-	bgh:person bgh:Person3 ;
-	bgh:number bgh:Plural ;
-	bgh:tam bgh:Future ;
 	.
 
-aama:ID27689bd8-dad5-4de7-ae6f-15dd3f86636d a aamas:Term ;
+aama:ID02c52038-d39b-45e4-a19e-6b958ac87839 a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:ghadames-VSubjMarkers ;
-	bgh:vmorphClass bgh:AffixSubjMark ;
 	bgh:pos bgh:Verb ;
-	bgh:token "...-năt" ;
-	bgh:gender bgh:Fem ;
-	bgh:person bgh:Person3 ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Active ;
 	bgh:number bgh:Plural ;
-	bgh:tam bgh:Future ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "...-năt" ;
 	.
 
-#TERMCLUSTER:  Pronominal_Paradigms_to_be_added
+aama:IDf4286708-f3e7-42df-a0bc-abdc12790f4b a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
+	bgh:token "...-ăʕ" ;
+	.
+
+aama:ID0af3aa97-86a5-48f4-9a67-78ec56c7f8f8 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
+	bgh:token "...-ǝt" ;
+	.
+
+aama:IDc2688ff2-0ab6-4d8d-9b85-3ae29b035f8a a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "..." ;
+	.
+
+aama:ID7a752961-1fef-4c49-b324-c4c23c51b113 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "...-ăt" ;
+	.
+
+aama:ID4877d9a7-29e3-42ee-ae3c-88f105f35620 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
+	bgh:token "...-it" ;
+	.
+
+aama:IDaa02a588-d4f6-4ee7-adb6-db73af0362ee a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "...-it" ;
+	.
+
+aama:IDf3610132-85e2-47f9-ab4e-5503a7358a27 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "...-it" ;
+	.
+
+aama:ID95a032a1-c483-4b0a-9869-99f4dfb340b5 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "...-it" ;
+	.
+
+aama:ID8082ea62-e5d6-49f8-8588-2c1da4f86e54 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Stative ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "...-it" ;
+	.
+
+aama:ID68c704a1-14fd-4fa6-923e-18f5a7cce701 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
+	bgh:token "..." ;
+	.
+
+aama:IDf5c137aa-7383-471a-896e-88732106b1ed a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Common ;
+	bgh:token "t-..." ;
+	.
+
+aama:ID5f7ba45c-f803-4715-9a7a-7e99ee5dc851 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "y-..." ;
+	.
+
+aama:IDbf2dae27-9b5c-4e63-80a4-adfd72f8a1f5 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Singular ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "t-..." ;
+	.
+
+aama:ID2a08980d-cad7-44fa-bbb4-2aab49f13109 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person1 ;
+	bgh:gender bgh:Common ;
+	bgh:token "n-..." ;
+	.
+
+aama:IDef65eba5-7b95-49ec-a2fe-0932ce2cc5c2 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "t-...-ăm" ;
+	.
+
+aama:ID48f68233-4f84-47cb-a062-6c96cf079dbc a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person2 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "t-... -măt" ;
+	.
+
+aama:IDd36d3fb8-4480-4b2c-9bbf-c42010e88e34 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Masc ;
+	bgh:token "...-ăn" ;
+	.
+
+aama:IDe63c858a-ef3d-4c13-9f1b-9093835ac1a7 a aamas:Term ;
+	aamas:lang aama:Berber-ghadames ;
+	aamas:memberOf bgh:ghadames-VSubjMarkers ;
+	bgh:pos bgh:Verb ;
+	bgh:vmorphClass bgh:AffixSubjMark ;
+	bgh:tam bgh:Future ;
+	bgh:number bgh:Plural ;
+	bgh:person bgh:Person3 ;
+	bgh:gender bgh:Fem ;
+	bgh:token "...-năt" ;
+	.
+
+#TERMCLUSTER: Pronominal_Paradigms_to_be_added
 
 bgh:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:label "Pronominal_Paradigms_to_be_added" ;
@@ -2749,12 +2736,13 @@ bgh:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:comment "K13p." 
 	.
 
-aama:ID1317d647-96e7-46a4-b604-f903e153d752 a aamas:Term ;
+aama:IDa0bc37d3-dac8-48e1-9eae-d47a8fab0f5a a aamas:Term ;
 	aamas:lang aama:Berber-ghadames ;
 	aamas:memberOf bgh:Pronominal_Paradigms_to_be_added ;
 	bgh:pos bgh:Pronoun ;
 	bgh:proClass bgh:To_be_added ;
-	bgh:token "not attested" ;
-	bgh:person bgh:Not_in_datastore ;
 	bgh:status bgh:NA ;
+	bgh:person bgh:Not_in_datastore ;
+	bgh:token "not attested" ;
 	.
+
